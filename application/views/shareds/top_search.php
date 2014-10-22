@@ -142,10 +142,10 @@
 
 					<div class="tab-content">
 						<div class="tab-pane active" id="kota">
-							<img src="asset/frontend/img/peta1.png" class="img-responsive peta-atur">
+							<img src="<?php echo base_url('asset/frontend/img/peta1.png'); ?>" class="img-responsive peta-atur">
 						</div>
 						<div class="tab-pane" id="kab">
-							<img src="asset/frontend/img/peta2.jpg" class="img-responsive peta-atur">
+							<img src="<?php echo base_url('asset/frontend/img/peta2.jpg'); ?>" class="img-responsive peta-atur">
 						</div>
 					</div>
 				</div>

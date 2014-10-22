@@ -13,7 +13,7 @@
 
 				<div class="pull-right">
 					<span style="font-size:11px;">Kembali ke Halaman Utama</span>
-					<a class="btn btn-default btn-xs login-link" href="../index.php" style="margin-top:-2px;"><i class="fa fa-plus-circle"></i> Click Here</a>
+					<a class="btn btn-default btn-xs login-link" href="<?php echo base_url('home'); ?>" style="margin-top:-2px;"><i class="fa fa-plus-circle"></i> Click Here</a>
 				</div>
 			</div>
 			<div class="panel-body">

@@ -808,3 +808,11 @@ aside.skin-6 .main-menu > ul > li > .submenu  li.active a .submenu-label{
 #top-nav.skin-6 .nav-notification > li > a:focus {
   color: #fff;
 }
+
+
+/*REDESIGN BY FATHAN ROHMAN */
+.padding-10{
+  padding: 10px;
+  color: #FFF;
+  margin-top: 10px;
+}

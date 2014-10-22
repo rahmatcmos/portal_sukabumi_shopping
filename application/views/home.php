@@ -716,7 +716,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -754,7 +754,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -792,7 +792,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -830,7 +830,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -868,7 +868,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -908,7 +908,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -946,7 +946,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -984,7 +984,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -1022,7 +1022,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>
@@ -1060,7 +1060,7 @@
 							<div class="col-md-4 padding-right0 padding-left0">
 								<div class="col-xs-12 padding0">
 									<a class="col-xs-12 padding0 pull-left medium-products" href="#">
-										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="asset/frontend/img/single1.jpg">
+										<img alt="#" class="img-responsive car-listing-image padding0 col-xs-12 img2-hover" src="<?php echo base_url('asset/frontend/img/single1.jpg'); ?>">
 									</a>        
 								</div>
 							</div>

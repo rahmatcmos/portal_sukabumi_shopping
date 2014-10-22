@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends CI_Controller 
+{
 
 	public function __construct()
 	{
@@ -34,10 +35,8 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('shareds/head');
 		$this->load->view('shareds/nav_bar');
-		$this->load->view('shareds/carousel');
-		$this->load->view('shareds/top_search');
+		$this->load->view('shareds/mini_property');
 		$this->load->view('single_barang');
-		$this->load->view('shareds/foo');
 		$this->load->view('shareds/footer');
 		$this->load->view('shareds/javascript');
 	}
