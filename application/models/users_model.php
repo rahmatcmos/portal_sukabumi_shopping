@@ -2,10 +2,10 @@
 	
 	class Users_model extends CI_Model {
 		
-		public function create($data1, $data2, $data3) {
+		public function save_data($data1,$data2,$data3) {
 		    $this->db->trans_start();
 
-		    $sql1 = "INSERT INTO users (username, email, password, role_id, active) VALUES (?, ?, ?, ?, ?)";
+		    $sql1 = "INSERT INTO users (username, email, password, role_id, active) VALUES (?, ?, ?, '1', '1')";
 		    $this->db->query($sql1, $data1); 
 		    
 		    $id_users = $this->db->insert_id(); 
@@ -18,9 +18,9 @@
 		    $this->db->trans_complete(); 
 		    
 		    if($save_data){
-				return redirect ('users/');
+				return redirect ('backend/users/');
 			}else{
-				return redirect ('users/add');
+				return redirect ('backend/users/add');
 			}
 		}
 	}

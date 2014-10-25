@@ -5,14 +5,14 @@
 			<li>Form</li>	 
 			<li class="active">Data Admins</li>	 
 		</ul>
-	</div><!--breadcrumb-->
+	</div>
 	<div class="padding-md">
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				USERS
-			</div>
-			<div class="panel-body">
-				<form id="formToggleLine" action="<?php echo base_url('backend/users/create') ?>" enctype="multipart/form-data" method="POST" class="form-horizontal no-margin form-border">
+		<form id="formToggleLine" action="<?php echo base_url('backend/users/save_data') ?>" enctype="multipart/form-data" method="POST" class="form-horizontal no-margin form-border">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					USERS
+				</div>
+				<div class="panel-body">
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Username</label>
 						<div class="col-lg-6">
@@ -34,7 +34,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-						<?php echo form_error('email', '<div class="text-danger">', '</div>'); ?>
+							<?php echo form_error('email', '<div class="text-danger">', '</div>'); ?>
 						</div>
 					</div>
 					<div class="form-group">
@@ -42,7 +42,7 @@
 						<div class="col-lg-6">
 							<div class="input-group">
 								<span class="input-group-addon"><span class="fa fa-key"></span></span>
-								<input class="form-control" name="password_one" type="text" placeholder="Your Password">
+								<input class="form-control" name="password_one" type="password" placeholder="Your Password">
 							</div>
 						</div>
 						<div class="col-lg-4">
@@ -54,7 +54,7 @@
 						<div class="col-lg-6">
 							<div class="input-group">
 								<span class="input-group-addon"><span class="fa fa-key"></span></span>
-								<input class="form-control" name="password_two" type="text" placeholder="Confirm Password">
+								<input class="form-control" name="password_two" type="password" placeholder="Confirm Password">
 							</div>
 						</div>
 						<div class="col-lg-4">
@@ -67,15 +67,13 @@
 							<button type="submit" class="btn btn-success">SAVE</button>
 						</div>
 					</div>
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				PROFILE
-			</div>
-			<div class="panel-body">
-				<form id="formToggleLine" class="form-horizontal no-margin form-border">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					PROFILE
+				</div>
+				<div class="panel-body">
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Nama Lengkap</label>
 						<div class="col-lg-6">
@@ -119,15 +117,13 @@
 							<button type="submit" class="btn btn-success">SAVE</button>
 						</div>
 					</div>
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				INFORMATION
-			</div>
-			<div class="panel-body">
-				<form id="formToggleLine" class="form-horizontal no-margin form-border">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					INFORMATION
+				</div>
+				<div class="panel-body">
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Daerah Asal</label>
 						<div class="col-lg-6">
@@ -174,9 +170,9 @@
 							<button type="submit" class="btn btn-success">SAVE</button>
 						</div>
 					</div>
-				</form>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
 </div>

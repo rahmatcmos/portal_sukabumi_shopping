@@ -4,10 +4,10 @@
 	
 		public function __construct() {
 			parent::__construct();
-			$this->load->library('simpleauth');
-			$this->load->library('upload','upload');
 			$this->load->model('users_model','users');
-			$this->output->enable_profiler(TRUE);
+			$this->load->library('simpleauth');
+			$this->load->library('upload');
+			$this->load->library('image_lib');
 		}
 		
 		public function index()
@@ -40,7 +40,7 @@
 			$this->load->view('backend/home/footer');
 		}
 
-		public function create()
+		public function save_data()
 		{
 			$ceklogin = $this->simpleauth->cekBelumLogin();
 			if ($ceklogin) {
@@ -60,9 +60,9 @@
 				$this->load->view('backend/home/scroll-to-top');
 				$this->load->view('backend/home/footer');
 			}else{
-				$config['upload_path'] = "./users/";
+				$config['upload_path']   = "./users/";
 				$config['allowed_types'] = 'gif|jpg|png|JPEG';
-				$config['file_name'] = url_title($this->input->post('avatar'));
+				$config['file_name']     = url_title($this->input->post('avatar'));
 				$config['encrypt_name']  = TRUE;
 
 				$this->upload->initialize($config);
@@ -83,20 +83,15 @@
 				$rt           = $this->input->post('rt');
 				$rw           = $this->input->post('rw');
 
-				if ($password_one != $password_tw){
-					echo "password tidak sama!";
-					redirect ('backend/users/add');
-				}
-
-				if( !$this->upload->create('avatar')){
-					echo $this->upload->display_errors();
+				if ($password_one != $password_two) {
+					echo "<script>alert('password dan konfirmasi password tidak sama!')</scrip>";
+						redirect ('backend/users/add');
 				}else{
 					$data1 = array(
-						'username'     => $username, 
-						'email'        => $email,
-						'password_one' => $password_one,
-						'password_two' => $password_two,
-						);
+						'username' => $username, 
+						'email'    => $email,
+						'password' => $password_one,
+					);
 
 					$data2 = array(
 						'fullname'     => $fullname,
@@ -114,11 +109,16 @@
 						'rt'           => $rt,
 						'rw'           => $rw,
 						);
-					
-					$dbgetmodel = array('users','profile','information');
 
-					$this->users->create($data1, $data2, $data3, $dbgetmodel);
-						redirect('users/');
+					$input = $this->users->save_data($data1,$data2,$data3);
+					
+					if($input){
+						echo "<script>alert('Data saved!');</script>";
+							redirect('backend/users/add');
+					}else{
+						echo "<script>alert('Data not saved!');</script>";
+							redirect ('backend/users/add');
+					}
 				}
 			}
 		}
