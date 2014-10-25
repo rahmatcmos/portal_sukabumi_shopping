@@ -31,7 +31,8 @@ $(document).ready(function() {
     $(".tooltipsku").tooltip();
 });
 
-function populateList(a){
-  a = document.getElementById(a.value);
-  alert(a);
+function optionCheck(){
+  var option = document.getElementById("populateList").value;
+  $("#aside-property-search").css("display","none");
+  $("."+option).css("display","block");
 }

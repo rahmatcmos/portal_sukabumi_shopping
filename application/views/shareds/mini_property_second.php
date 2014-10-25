@@ -8,7 +8,7 @@
 							<div class="row">
 								<div class="form-group col-md-3">
 									<label for="">Kategori barang baru</label>
-									<select onclick="populateList(this)" class="form-control">
+									<select onchange="optionCheck()" class="form-control" id="populateList">
 										<option>Pilih kategori ...</option>
 										<option value="car">Mobil</option>
 										<option value="bike">Motor</option>
