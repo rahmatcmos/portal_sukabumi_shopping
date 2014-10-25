@@ -48,7 +48,6 @@ $(function	()	{
 	 
 	$('#formWizard1').parsley( { listeners: {
 		onFieldValidate: function ( elem ) {
-			// if field is not visible, do not apply Parsley validation!
 			if ( !$( elem ).is( ':visible' ) ) {
 				return true;
 			}

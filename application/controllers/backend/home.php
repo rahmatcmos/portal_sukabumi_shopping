@@ -4,12 +4,17 @@
 	
 		public function __construct() {
 			parent::__construct();
+			$this->load->library('simpleauth');
 		}
 		
 		public function index()
 		{
+			$ceklogin = $this->simpleauth->cekBelumLogin();
+			if ($ceklogin) {
+				redirect ('backend/login');
+			}
+
 			$this->load->view('backend/home/head');
-			$this->load->view('backend/home/theme-setting');
 			$this->load->view('backend/home/top-navbar');
 			$this->load->view('backend/home/sidebar-right');
 			$this->load->view('backend/home/home');

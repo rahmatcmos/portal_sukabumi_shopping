@@ -13,19 +13,11 @@
 		<div class="user-block clearfix">
 			<img src="<?php echo base_url('asset/backend/images/user.jpg'); ?>" alt="User Avatar">
 			<div class="detail">
-				<strong>Fathan Rohman</strong><span class="badge badge-danger bounceIn animation-delay4 m-left-xs">4</span>
+				<strong><?php echo $this->session->userdata('username');?></strong>
 				<ul class="list-inline">
 					<li><a href="#">Profile</a></li>
 					<li><a href="#" class="no-margin">Inbox</a></li>
 				</ul>
-			</div>
-		</div>
-		<div class="search-block">
-			<div class="input-group">
-				<input type="text" class="form-control input-sm" placeholder="search here...">
-				<span class="input-group-btn">
-					<button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
-				</span>
 			</div>
 		</div>
 		<div class="main-menu">
@@ -45,10 +37,10 @@
 						<span class="menu-hover"></span>
 					</a>
 					<ul class="submenu">
-						<li><a href="#"><span class="submenu-label">Create Admin</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/add'); ?>"><span class="submenu-label">Create Admin</span></a></li>
 					</ul>
 					<ul class="submenu">
-						<li><a href="#"><span class="submenu-label">View All</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/'); ?>"><span class="submenu-label">View All</span></a></li>
 					</ul>
 				</li>
 				<li class="openable open">
@@ -58,15 +50,16 @@
 						<span class="menu-hover"></span>
 					</a>
 					<ul class="submenu">
-						<li><a href="#"><span class="submenu-label">Create Member</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/add'); ?>"><span class="submenu-label">Create Member</span></a></li>
 					</ul>
 					<ul class="submenu">
-						<li><a href="#"><span class="submenu-label">View All</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/'); ?>"><span class="submenu-label">View All</span></a></li>
 					</ul>
 					<ul class="submenu">
-						<li><a href="#"><span class="submenu-label">Member Pending</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/user_pending'); ?>"><span class="submenu-label">Member Pending</span></a></li>
 					</ul>
 				</li>
+
 				<li class="padding-10">PRODUCTS</li>
 				<li class="openable open">
 					<a href="#">
@@ -127,6 +120,19 @@
 						<li><a href="#"><span class="submenu-label">View All</span></a></li>
 					</ul>
 				</li>
+
+				<li class="padding-10">INFORMATION</li>
+				<li class="openable open">
+					<a href="#">
+						<span class="menu-icon"><i class="fa fa-map-marker fa-lg"></i></span>
+						<span class="text">City/Agency</span>
+						<span class="menu-hover"></span>
+					</a>
+					<ul class="submenu">
+						<li><a href="<?php echo base_url('backend/informations/'); ?>"><span class="submenu-label">View All</span></a></li>
+					</ul>
+				</li>
+				
 				<li class="padding-10">OTHERS</li>
 				<li class="openable open">
 					<a href="#">

@@ -20,17 +20,17 @@
 										<div class="row">
 											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 												<ul>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di kecamatan gunung puyuh">Kecamatan Gunung Puyuh</li>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Warudoyong">Kecamatan Warudoyong</li>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Cikole">Kecamatan Cikole</li>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Baros">Kecamatan Baros</li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di kecamatan gunung puyuh"><a href="">Kecamatan Gunung Puyuh</a></li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Warudoyong"><a href="">Kecamatan Warudoyong</a></li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Cikole"><a href="">Kecamatan Cikole</a></li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Baros"><a href="">Kecamatan Baros</a></li>
 												</ul>
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 												<ul>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Cibeureum">Kecamatan Cibeureum</li>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Citamiang">Kecamatan Citamiang</li>
-													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Lembur Situ">Kecamatan Lembur Situ</li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Cibeureum"><a href="">Kecamatan Cibeureum</a></li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Citamiang"><a href="">Kecamatan Citamiang</a></li>
+													<li class='tooltipsku' data-toggle="tooltip" data-placement="top" title="Cari barang di Kecamatan Lembur Situ"><a href="">Kecamatan Lembur Situ</a></li>
 												</ul>
 											</div>
 										</div>

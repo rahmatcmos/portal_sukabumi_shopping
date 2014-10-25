@@ -22,7 +22,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#" target="#aside-property-search">Sukabumi Shopping</a>
+						<a class="navbar-brand" href="<?php echo base_url('home'); ?>">Sukabumi Shopping</a>
 					</div>
 					
 					<ul class="nav navbar-nav navbar-right">
@@ -40,7 +40,7 @@
 						</li>
 						<li>
 							<div class="text-center">
-								<button type="button" class="btn btn-fresh btn-sm"><span class="fa fa-plus"></span> Pasang Iklan Gratis</button>
+								<a href="<?php echo base_url('signup_ads') ?>"><button type="button" class="btn btn-fresh btn-sm"><span class="fa fa-plus"></span> Pasang Iklan Gratis</button></a>
 							</div>
 						</li>
 					</ul>
@@ -68,9 +68,6 @@
 							<div class="form-group">
 								<a class="btn btn-primary-fb" href="#"><i class="fa fa-facebook pull-left font16"></i> Login dengan Facebook </a>
 							</div>
-							<div class="form-group">
-								<a class="btn btn-primary-gplus" href="#"><i class="fa fa-google-plus pull-left font16"></i> Login dengan Google+ </a>
-							</div>
 							<div class="form-group margin-bottom30 margin-top20">
 								<div class="col-xs-12 padding0" style=" margin-left: 0px; ">
 									<i class="omb-or"></i>
@@ -78,12 +75,14 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="controls">
+								<div class="controls text-italic">
+									<label for="email">Email</label>
 									<input class="form-control" name="email" placeholder="Email" type="email">
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="controls">
+								<div class="controls text-italic">
+									<label for="password">Password</label>
 									<input class="form-control password" name="password" placeholder="Kata Sandi" type="password">
 								</div>
 							</div>
@@ -130,10 +129,6 @@
 							<div class="form-group">
 								<a class="btn btn-primary-fb" href="/users/auth/facebook"><i class="fa fa-facebook pull-left font16"></i> Daftar dengan Facebook </a>
 							</div>
-
-							<div class="form-group">
-								<a class="btn btn-primary-gplus" href="#"><i class="fa fa-google-plus pull-left font16"></i> Daftar dengan Google+ </a>
-							</div>
 							<div class="form-group margin-bottom30 margin-top20">
 								<div class="col-xs-12 padding0" style=" margin-left: 0px; ">
 									<i class="omb-or"></i>
@@ -141,22 +136,26 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="controls">
+								<div class="controls text-italic">
+									<label for="username">Username</label>
 									<input class="form-control" name="username" placeholder="Username" type="text" required>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="controls">
+								<div class="controls text-italic">
+									<label for="email">Email</label>
 									<input class="form-control" name="email" placeholder="Email" type="email" required>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="controls">
+								<div class="controls text-italic">
+									<label for="password">Password</label>
 									<input class="form-control password" name="password" placeholder="Kata Sandi" type="password" required>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="controls">
+								<div class="controls text-italic">
+									<label for="password">Konfirmasi password</label>
 									<input class="form-control password" name="password" placeholder="Konfirmasi Kata Sandi" type="password" required>
 								</div>
 							</div>

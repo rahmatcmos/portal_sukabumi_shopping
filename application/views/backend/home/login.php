@@ -1,38 +1,49 @@
-<div class="login-wrapper">
-	<div class="text-center">
-		<h2 class="fadeInUp animation-delay8" style="font-weight:bold">
-			<span class="text-success">Sukabumi</span> <span style="color:#ccc; text-shadow:0 1px #fff">Shopping</span>
-		</h2>
-	</div>
-	<div class="login-widget animation-delay1">	
-		<div class="panel panel-default">
-			<div class="panel-heading clearfix">
-				<div class="pull-left">
-					<i class="fa fa-lock fa-lg"></i> Login
-				</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Login Form</title>
+	<link href="<?php echo base_url('asset/backend/css/style_login_backend.css') ?>" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url('asset/backend/css/style.css') ?>" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<?php echo base_url('asset/backend/js/jquery-1.10.2.min.js') ?>"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".username").focus(function() {
+				$(".user-icon").css("left","-48px");
+			});
+			$(".username").blur(function() {
+				$(".user-icon").css("left","0px");
+			});
 
-				<div class="pull-right">
-					<span style="font-size:11px;">Kembali ke Halaman Utama</span>
-					<a class="btn btn-default btn-xs login-link" href="<?php echo base_url('home'); ?>" style="margin-top:-2px;"><i class="fa fa-plus-circle"></i> Click Here</a>
-				</div>
+			$(".password").focus(function() {
+				$(".pass-icon").css("left","-48px");
+			});
+			$(".password").blur(function() {
+				$(".pass-icon").css("left","0px");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="user-icon"></div>
+		<div class="pass-icon"></div>
+		<form name="login-form" class="login-form" action="<?php echo base_url('backend/login/DoLogin'); ?>" method="POST">
+			<div class="header">
+				<h1>Sukabumi Shopping</h1>
+				<span><?php echo validation_errors(); ?>
+				<?php echo $this->session->flashdata('notification')?>
 			</div>
-			<div class="panel-body">
-				<form class="form-login">
-					<div class="form-group">
-						<label>Username</label>
-						<input type="text" placeholder="Username" class="form-control input-sm bounceIn animation-delay2" >
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input type="password" placeholder="Password" class="form-control input-sm bounceIn animation-delay4">
-					</div>
-					<div class="seperator"></div>
-					<hr/>
-					<a class="btn btn-success btn-sm bounceIn animation-delay5 login-link pull-right" href="#">
-					<i class="fa fa-sign-in"></i> Sign in</a>
-				</form>
+			<div class="content">
+				<input name="username" type="text" class="input username" value="Username" onfocus="this.value=''" placeholder="username">
+				<input name="password" type="password" class="input password" value="Password" onfocus="this.value=''" placeholder="password">
 			</div>
-		</div>
-	</div>
-</div>
 
+			<div class="footer">
+				<input type="submit" name="submit" value="Login" class="button" />
+			</div>
+		</form>
+	</div>
+	<div class="gradient"></div>
+</body>
+</html>

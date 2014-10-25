@@ -1,3 +1,23 @@
+<script src="<?php echo base_url('asset/frontend/js/jquery-2.0.0.js') ?>"></script>
+<script type="text/javascript">
+	function get_agency(nilai){
+		$.ajax({
+			type: "POST",
+			url: "<?php echo site_url('home/Get_Agency');?>",
+			data:"key="+nilai,
+			success: function(data){
+				$("#agency").html(data);
+			},
+
+			error:function(XMLHttpRequest){
+				alert(XMLHttpRequest.responseText);
+			}
+
+		})
+
+	};
+</script>
+
 <section id="property-carousel">
 	<div class="container-fluid">
 		<div class="row">
@@ -60,73 +80,70 @@
 						<div class="tab-content tab-content-search">
 							<div class="tab-pane active" id="baru">
 								<form class="form-inline form-search clearfix" role="form">
-									<div class="form-group col-sm-6 col-lg-2">
-										<label for="">Kategori Barang Baru</label>
-										<select class="form-control input-large-search">
-											<option>Kategori Barang</option>
+									<div class="form-group col-sm-3 col-lg-2">
+										<label for="">Kategori barang baru</label>
+										<select class="form-control">
+											<option>Pilih kategori ...</option>
 											<option>Mobil</option>
 											<option>Motor</option>
-											<option>Perlengkapan Rumah Tangga</option>
-											<option>Elektronik & Gadget</option>
-											<option>Properti</option>
-										</select>	
+											<option>Property</option>
+											<option>Elektronik dan Gadget</option>
+											<option>Makanan dan Minuman</option>
+										</select>
 									</div>
-									<div class="form-group col-sm-6 col-lg-3">
+									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kota/Kabupaten</label>
-										<select class="form-control input-large-search">
-											<option>Cari Daerah Kota/Kabupaten</option>
-											<option>Kota Sukabumi</option>
-											<option>Kabupaten Sukabumi</option>
+										<select name="city" id="city" class="form-control" onChange="get_agency(this.value);">
+											<option value="">Pilih Daerah ...</option>
+											<?php  
+												foreach ($city as $row) {
+											?>
+											<option value="<?php echo $row->id_search_city; ?>"><?php echo $row->city_name; ?></option>
+											<?php
+												}
+											?>
 										</select>
 									</div>
-									<div class="form-group col-sm-6 col-lg-3">
+									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kecamatan</label>
-										<select class="form-control input-large-search" data-bootstrap="tooltip" data-original-title="Pilih Lokasi Kecamatan">
-											<option>Cari Daerah Kecamatan</option>
-											<option>Kecamatan Gunung Puyuh</option>
-											<option>Kecamatan Cibeureum</option>
-											<option>Kecamatan Lembur Situ</option>
-											<option>Kecamatan Baros</option>
-											<option>Kecamatan Warudoyong</option>
-											<option>Kecamatan Cikole</option>
-											<option>Kecamatan Citamiang</option>
+										<select class="form-control" name="agency_name" id="agency">
+											<option>Pilih Daerah ...</option>
 										</select>
 									</div>
-									<div class="form-group col-sm-6 col-lg-3">
-										<label for="">Keyword Search</label>
-										<input type="text" class="form-control input-large-search" placeholder="Masukan Kata Pencarian">
+									<div class="form-group col-sm-3 col-lg-3">
+										<label for="">Kata Pencarian</label>
+										<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Masukan Kata Pencarian">
 									</div>
 									<div class="form-group col-sm-2 col-lg-1">
-										<button type="submit" class="btn btn-flat-asphalt btn-search2">SEARCH</button>
+										<button type="submit" class="btn btn-flat-asphalt btn-search2">Cari</button>
 									</div>
 								</form>
 							</div>
-
 							<div class="tab-pane" id="bekas">
 								<form class="form-inline form-search clearfix" role="form">
-									<div class="form-group col-sm-6 col-lg-2">
-										<label for="">Kategori Barang Bekas</label>
-										<select class="form-control input-large-search">
-											<option>Kategori Barang</option>
+									<div class="form-group col-sm-3 col-lg-2">
+										<label for="">Kategori barang bekas</label>
+										<select class="form-control">
+											<option>Pilih kategori ...</option>
 											<option>Mobil</option>
 											<option>Motor</option>
-											<option>Perlengkapan Rumah Tangga</option>
-											<option>Elektronik & Gadget</option>
-											<option>Properti</option>
-										</select>	
+											<option>Property</option>
+											<option>Elektronik dan Gadget</option>
+											<option>Makanan dan Minuman</option>
+										</select>
 									</div>
-									<div class="form-group col-sm-6 col-lg-3">
+									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kota/Kabupaten</label>
-										<select class="form-control input-large-search">
-											<option>Cari Daerah Kota/Kabupaten</option>
+										<select class="form-control">
+											<option>Pilih Daerah ...</option>
 											<option>Kota Sukabumi</option>
 											<option>Kabupaten Sukabumi</option>
 										</select>
 									</div>
-									<div class="form-group col-sm-6 col-lg-3">
+									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kecamatan</label>
-										<select class="form-control input-large-search" data-bootstrap="tooltip" data-original-title="Pilih Lokasi Kecamatan">
-											<option>Cari Daerah Kecamatan</option>
+										<select class="form-control" data-bootstrap="tooltip" data-original-title="Pilih Lokasi Kecamatan">
+											<option>Pilih Daerah ...</option>
 											<option>Kecamatan Gunung Puyuh</option>
 											<option>Kecamatan Cibeureum</option>
 											<option>Kecamatan Lembur Situ</option>
@@ -136,12 +153,12 @@
 											<option>Kecamatan Citamiang</option>
 										</select>
 									</div>
-									<div class="form-group col-sm-6 col-lg-3">
+									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kata Pencarian</label>
-										<input type="text" class="form-control input-large-search" placeholder="Masukan Kata Pencarian">
+										<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Masukan Kata Pencarian">
 									</div>
 									<div class="form-group col-sm-2 col-lg-1">
-										<button type="submit" class="btn btn-flat-asphalt btn-search2">SEARCH</button>
+										<button type="submit" class="btn btn-flat-asphalt btn-search2">Cari</button>
 									</div>
 								</form>
 							</div>
@@ -149,6 +166,14 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="property-search-bottom">
+	<div class="container">
+		<div class="row">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi enim perferendis tenetur deleniti dolores eius, totam non at perspiciatis. Magni pariatur aliquam minus labore, ab alias at itaque et.
 		</div>
 	</div>
 </section>

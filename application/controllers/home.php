@@ -6,14 +6,18 @@ class Home extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('locations_model','locations');
 
 	}
 
 	public function index()
 	{
+		// GET CITY FROM TABLE SEARCH CITY
+		$data['city']  = $this->locations->Get_search_city();
+
 		$this->load->view('shareds/head');
 		$this->load->view('shareds/nav_bar');
-		$this->load->view('shareds/carousel');
+		$this->load->view('shareds/carousel', $data);
 		$this->load->view('shareds/top_search');
 		$this->load->view('home');
 		$this->load->view('shareds/foo');
@@ -21,26 +25,15 @@ class Home extends CI_Controller
 		$this->load->view('shareds/javascript');
 	}
 
-	public function list_barang()
+	public function Get_Agency()
 	{
-		$this->load->view('shareds/head');
-		$this->load->view('shareds/nav_bar');
-		$this->load->view('shareds/mini_property');
-		$this->load->view('list_barang');
-		$this->load->view('shareds/footer');
-		$this->load->view('shareds/javascript');
-	}
+		$key    = $this->input->post('key');
+		$agency = $this->locations->Get_id_search_city($key);
 
-	public function single_barang()
-	{
-		$this->load->view('shareds/head');
-		$this->load->view('shareds/nav_bar');
-		$this->load->view('shareds/mini_property');
-		$this->load->view('single_barang');
-		$this->load->view('shareds/footer');
-		$this->load->view('shareds/javascript');
+		foreach ($agency as $row){
+			echo '<option value="'.$row['id_search_agency'].'" class="form-control">Kec. '.$row['agency_name'].'</option>';
+		}
 	}
-
 }
 
 /* End of file home.php */

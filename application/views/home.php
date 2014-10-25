@@ -16,37 +16,24 @@
 													<hr>
 													<div class="form-group col-md-3">
 														<label for="">Merk Mobil</label>
-														<select class="form-control input-large-search">
-															<option>Pilih merk motor...</option>
-															<option value="">Aprillia</option>
-															<option value="">Bajaj</option>
-															<option value="">Benelli</option>
-															<option value="">BMW</option>
-															<option value="">Ducati</option>
-															<option value="">Gilera</option>
-															<option value="">Harley Davidson</option>
-															<option value="">Honda</option>
-															<option value="">Husqvarna</option>
-															<option value="">Hyosung</option>
-															<option value="">Jialing</option>
-															<option value="">Kanzen</option>
-															<option value="">KTM</option>
-															<option value="">Kymco</option>
-															<option value="">Minerva</option>
-															<option value="">Piaggio</option>
-															<option value="">Suzuki</option>
-															<option value="">Tossa</option>
-															<option value="">Triumph</option>
-															<option value="">TVS</option>
-															<option value="">Viar</option>
-															<option value="">Yamaha</option>
-															<option value="">Kawasaki</option>
-														</select>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:217px;" tabindex="1">
+													        <option value=""></option>
+													        <option value="Honda">Honda</option>
+													        <option value="Toyota">Toyota</option>
+													        <option value="Daihatsu">Daihatsu</option>
+													        <option value="Hyundai">Hyundai</option>
+													        <option value="Nissan">Nissan</option>
+													        <option value="Ford">Ford</option>
+													        <option value="Suzuki">Suzuki</option>
+													        <option value="BMW">BMW</option>
+													        <option value="Djaguar">Djaguar</option>
+													        <option value="HINO">HINO</option>
+													   	</select>
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Tipe Bodi</label>
-														<select class="form-control input-large-search">
-															<option value="">Silahkan pilih...</option>
+														<select data-placeholder="Pilih Jenis..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="2">
+															<option value=""></option>
 															<option value="#">Minibus</option>
 															<option value="#">JEEP</option>
 															<option value="#">Bak Terbuka</option>
@@ -60,16 +47,16 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Transmisi</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis transmisi...</option>
+														<select data-placeholder="Pilih Jenis..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="3">
+															<option value=""></option>
 															<option>Automatic</option>
 															<option>Manual</option>
 														</select>
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Tahun Produksi</label>
-														<select class="form-control input-large-search">
-															<option value="">Silahkan pilih...</option>
+														<select data-placeholder="Pilih Tahun..." class="form-control input-large-search chosen-select" style="width:195px;" tabindex="4">
+															<option value=""></option>
 															<option value="2014">2014</option>
 															<option value="2013">2013</option>
 															<option value="2012">2012</option>
@@ -102,10 +89,10 @@
 															<option value="1985">&lt;1986</option>
 														</select>
 													</div>
-													<div class="form-group col-md-6">
+													<div class="form-group col-md-3">
 														<label for="">Warna</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis warna...</option>
+														<select data-placeholder="Pilih Warna..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="5">
+															<option value=""></option>
 															<option>Merah</option>
 															<option>Putih</option>
 															<option>Kuning</option>
@@ -121,8 +108,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Kondisi</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis kondisi...</option>
+														<select data-placeholder="Pilih Kondisi..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="6">
+															<option value=""></option>
 															<option>Original</option>
 															<option>Modifikasi</option>
 															<option>Mulus Sekali</option>
@@ -130,31 +117,31 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Bahan Bakar</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis bahan bajar...</option>
+														<select data-placeholder="Pilih Jenis..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="7">
+															<option value=""></option>
 															<option>PERTAMAX</option>
 															<option>PREMIUM</option>
 															<option>SOLAR</option>
 														</select>
 													</div>
-													<div class="form-group col-md-6">
+													<div class="form-group col-md-3">
 														<label for="">Silinder</label>
-														<select class="form-control input-large-search">
-															<option>Jumlah Silinder...</option>
-															<option value="">1 Silinder</option>
-															<option value="">2 Silinder</option>
-															<option value="">3 Silinder</option>
-															<option value="">4 Silinder</option>
-															<option value="">5 Silinder</option>
-															<option value="">6 Silinder</option>
-															<option value="">7 Silinder</option>
-															<option value="">8 Silinder</option>
+														<select data-placeholder="Pilih Jenis..." class="form-control input-large-search chosen-select" style="width:195px;" tabindex="8">
+															<option value=""></option>
+															<option value="">1</option>
+															<option value="">2</option>
+															<option value="">3</option>
+															<option value="">4</option>
+															<option value="">5</option>
+															<option value="">6</option>
+															<option value="">7</option>
+															<option value="">8</option>
 														</select>
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Dari Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih dari harga...</option>
+														<select data-placeholder="Pilih Dari Harga..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="9">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -168,8 +155,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Sampai Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih Sampai Harga...</option>
+														<select data-placeholder="Pilih sampai harga..." class="form-control input-large-search chosen-select" style="width:217px;" tabindex="10">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -210,8 +197,8 @@
 													<hr>
 													<div class="form-group col-md-3">
 														<label for="">Merk Motor</label>
-														<select class="form-control input-large-search">
-															<option>Pilih merk motor...</option>
+														<select data-placeholder="Pilih Merk..." class="chosen-select" style="width:217px;" tabindex="1">
+															<option value=""></option>
 															<option value="">Aprillia</option>
 															<option value="">Bajaj</option>
 															<option value="">Benelli</option>
@@ -239,8 +226,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Jenis Motor</label>
-														<select class="form-control input-large-search">
-															<option value="">Silahkan pilih...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:217px;" tabindex="2">
+															<option value=""></option>
 															<option value="Motor Bebek">Motor Bebek</option>
 															<option value="Motor Cross">Motor Cross</option>
 															<option value="Motor Besar">Motor Besar</option>
@@ -249,8 +236,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Bahan Bakar</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis bahan bajar...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:217px;" tabindex="3">
+															<option value=""></option>
 															<option>PERTAMAX</option>
 															<option>PREMIUM</option>
 															<option>SOLAR</option>
@@ -258,16 +245,16 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Transmisi</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis transmisi...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:195px;" tabindex="4">
+															<option value=""></option>
 															<option>Automatic</option>
 															<option>Manual</option>
 														</select>
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Tahun Produksi</label>
-														<select class="form-control input-large-search">
-															<option value="">Silahkan pilih...</option>
+														<select data-placeholder="Pilih Tahun..." class="chosen-select" style="width:217px;" tabindex="5">
+															<option value=""></option>
 															<option value="2014">2014</option>
 															<option value="2013">2013</option>
 															<option value="2012">2012</option>
@@ -302,22 +289,22 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Silinder</label>
-														<select class="form-control input-large-search">
-															<option>Jumlah Silinder...</option>
-															<option value="">1 Silinder</option>
-															<option value="">2 Silinder</option>
-															<option value="">3 Silinder</option>
-															<option value="">4 Silinder</option>
-															<option value="">5 Silinder</option>
-															<option value="">6 Silinder</option>
-															<option value="">7 Silinder</option>
-															<option value="">8 Silinder</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:217px;" tabindex="6">
+															<option value=""></option>
+															<option value="">1</option>
+															<option value="">2</option>
+															<option value="">3</option>
+															<option value="">4</option>
+															<option value="">5</option>
+															<option value="">6</option>
+															<option value="">7</option>
+															<option value="">8</option>
 														</select>
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Warna</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis warna...</option>
+														<select data-placeholder="Pilih Warna..." class="chosen-select" style="width:217px;" tabindex="7">
+															<option value=""></option>
 															<option>Merah</option>
 															<option>Putih</option>
 															<option>Kuning</option>
@@ -329,8 +316,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Kondisi</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis kondisi...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:195px;" tabindex="8">
+															<option value=""></option>
 															<option>Original</option>
 															<option>Modifikasi</option>
 															<option>Mulus Sekali</option>
@@ -338,8 +325,8 @@
 													</div>
 													<div class="form-group col-md-6">
 														<label for="">Dari Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih dari harga...</option>
+														<select data-placeholder="Pilih dari harga..." class="chosen-select" style="width:475px;" tabindex="9">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -353,8 +340,8 @@
 													</div>
 													<div class="form-group col-md-6">
 														<label for="">Sampai Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih Sampai Harga...</option>
+														<select data-placeholder="Pilih sampai harga..." class="chosen-select" style="width:453px;" tabindex="10">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -395,8 +382,8 @@
 													<hr>
 													<div class="form-group col-md-4">
 														<label for="">Tipe Property</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:288px;" tabindex="1">
+															<option value=""></option>
 															<option value="1">Rumah</option>
 															<option value="2">Tanah</option>
 															<option value="3">Apartemen</option>
@@ -416,8 +403,8 @@
 													</div>
 													<div class="form-group col-md-2">
 														<label for="">Luas tanah m2</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:140px;" tabindex="2">
+															<option value=""></option>
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
@@ -432,8 +419,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Luas Bangunan m2</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:217px;" tabindex="3">
+															<option value=""></option>
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
@@ -448,8 +435,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Kamar Tidur</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Banyak kamar tidur..." class="chosen-select" style="width:196px;" tabindex="4">
+															<option value=""></option>
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
@@ -464,8 +451,8 @@
 													</div>
 													<div class="form-group col-md-4">
 														<label for="">Kamar Mandi</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Banyak kamar mandi..." class="chosen-select" style="width:288px;" tabindex="5">
+															<option value=""></option>
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
@@ -480,8 +467,8 @@
 													</div>
 													<div class="form-group col-md-5">
 														<label for="">Dari Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih dari harga...</option>
+														<select data-placeholder="Pilih dari harga..." class="chosen-select" style="width:388px;" tabindex="6">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -495,8 +482,8 @@
 													</div>
 													<div class="form-group col-md-3">
 														<label for="">Sampai Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih Sampai Harga...</option>
+														<select data-placeholder="Pilih sampai harga..." class="chosen-select" style="width:196px;" tabindex="7">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -537,8 +524,8 @@
 													<hr>
 													<div class="form-group col-md-4">
 														<label for="">Kategori</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih Jenis..." class="chosen-select" style="width:274px;" tabindex="1">
+															<option value=""></option>
 															<option value="1">Tablet</option>
 															<option value="2">Gadget</option>
 															<option value="3">Smartphone</option>
@@ -550,8 +537,8 @@
 													</div>
 													<div class="form-group col-md-4">
 														<label for="">Kamar Tidur</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih jenis..." class="chosen-select" style="width:274px;" tabindex="2">
+															<option value=""></option>
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
@@ -566,8 +553,8 @@
 													</div>
 													<div class="form-group col-md-4">
 														<label for="">Kondisi</label>
-														<select class="form-control input-large-search">
-															<option>Pilih jenis ...</option>
+														<select data-placeholder="Pilih jenis..." class="chosen-select" style="width:274px;" tabindex="3">
+															<option value=""></option>
 															<option>Original</option>
 															<option>Modifikasi</option>
 															<option>Mulus Sekali</option>
@@ -575,8 +562,8 @@
 													</div>
 													<div class="form-group col-md-4">
 														<label for="">Warna</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih warna..." class="chosen-select" style="width:274px;" tabindex="4">
+															<option value=""></option>
 															<option value="Biru">Biru</option>
 															<option value="Merah">Merah</option>
 															<option value="Hitam">Hitam</option>
@@ -591,8 +578,8 @@
 													</div>
 													<div class="form-group col-md-4">
 														<label for="">Dari Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih dari harga...</option>
+														<select data-placeholder="Pilih dari harga..." class="chosen-select" style="width:274px;" tabindex="5">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -606,8 +593,8 @@
 													</div>
 													<div class="form-group col-md-4">
 														<label for="">Sampai Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih Sampai Harga...</option>
+														<select data-placeholder="Pilih sampai harga..." class="chosen-select" style="width:274px;" tabindex="6">
+															<option value=""></option>
 															<option value="10000,-">10.000,-</option>
 															<option value="50000,-">50.000,-</option>
 															<option value="100000,-">100.000,-</option>
@@ -648,8 +635,8 @@
 													<hr>
 													<div class="form-group col-md-6">
 														<label for="">Kategori</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih jenis..." class="chosen-select" style="width:475px;" tabindex="1">
+															<option value=""></option>
 															<option value="1">Makanan Kaki Lima</option>
 															<option value="1">Makanan Restoran</option>
 															<option value="1">Makanan Cafe</option>
@@ -658,8 +645,8 @@
 													</div>
 													<div class="form-group col-md-6">
 														<label for="">Jenis Makanan</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih jenis...</option>
+														<select data-placeholder="Pilih jenis..." class="chosen-select" style="width:475px;" tabindex="2">
+															<option value=""></option>
 															<option value="1">Minuman</option>
 															<option value="2">Kue-kue</option>
 															<option value="3">Makanan Berat</option>
@@ -670,8 +657,8 @@
 													</div>
 													<div class="form-group col-md-6">
 														<label for="">Dari Harga</label>
-														<select class="form-control input-large-search" name="#">
-															<option>Pilih dari harga...</option>
+														<select data-placeholder="Pilih dari harga..." class="chosen-select" style="width:475px;" tabindex="3">
+															<option value=""></option>
 															<option value="10.000,-">10.000,-</option>
 															<option value="25.000,-">25.000,-</option>
 															<option value="50.000,-">50.000,-</option>
@@ -680,7 +667,7 @@
 													</div>
 													<div class="form-group col-md-6">
 														<label for="">Sampai Harga</label>
-														<select class="form-control input-large-search" name="#">
+														<select data-placeholder="Pilih sampai harga..." class="chosen-select" style="width:475px;" tabindex="4">
 															<option>Sampai Harga...</option>
 															<option value="10.000,-">10.000,-</option>
 															<option value="25.000,-">25.000,-</option>

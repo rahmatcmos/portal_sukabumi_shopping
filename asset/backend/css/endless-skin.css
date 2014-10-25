@@ -674,7 +674,7 @@ aside.skin-5 .main-menu > ul > li > .submenu  li.active a .submenu-label{
 }
 
 aside.skin-6 {
-  background: #495B6C;
+  background: #415160;
 }
 aside.skin-6 .size-toggle {
   border-bottom-color: #415160;
@@ -683,14 +683,14 @@ aside.skin-6 .size-toggle {
   -webkit-box-shadow: 0 1px 0 #506274;
 }
 aside.skin-6 .size-toggle .btn {
-  color: #BECFE0;
+  color: #FFF;
 }
 aside.skin-6 .size-toggle .btn:hover,
 aside.skin-6 .size-toggle .btn:focus {
   color: #fff;
 }
 aside.skin-6 .size-toggle .btn .icon-bar {
-  background-color: #BECFE0;
+  background-color: #FFF;
 }
 aside.skin-6 .sidebar-inner {
   border-right-color: #415160;
@@ -702,14 +702,14 @@ aside.skin-6 .sidebar-inner .user-block {
   -webkit-box-shadow: 0 1px 0 #506274;
 }
 aside.skin-6 .sidebar-inner .user-block .detail {
-  color: #BECFE0;
+  color: #FFF;
 }
 aside.skin-6 .sidebar-inner .user-block ul li a {
-  color: #BECFE0;
+  color: #FFF;
 }
 aside.skin-6 .sidebar-inner .user-block ul li a:hover,
 aside.skin-6 .sidebar-inner .user-block ul li a:focus {
-  color: #fff;
+  color: #FFF;
 }
 aside.skin-6 .sidebar-inner .search-block {
   border-bottom-color: #415160;
@@ -720,7 +720,7 @@ aside.skin-6 .sidebar-inner .search-block {
 aside.skin-6 .sidebar-inner .search-block input[type="text"],
 aside.skin-6 .sidebar-inner .search-block .btn {
   background: #fff;
-  color: #BECFE0;
+  color: #FFF;
   border-color: #dfdfdf;
 }
 aside.skin-6 .main-menu > ul > li {
@@ -734,15 +734,15 @@ aside.skin-6 .main-menu > ul > li.display {
 aside.skin-6 .main-menu > ul > li.active > a,
 aside.skin-6 .main-menu > ul > li.display > a {
   background: #415160;
-  color: #fff;
+  color: #FFF;
 }
 aside.skin-6 .main-menu > ul > li > a {
-  color: #BECFE0;
+  color: #FFF;
 }
 aside.skin-6 .main-menu > ul > li > a:hover,
 aside.skin-6 .main-menu > ul > li > a:focus {
   background: #394754;
-  color: #fff;
+  color: #FFF;
 }
 aside.skin-6 .main-menu > ul > li > a .menu-hover {
   background: #feffd8;

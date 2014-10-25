@@ -933,7 +933,8 @@
 	#property-search
 {
 	background:#9ad268;
-	border-bottom:4px solid #D3DFC8
+	border-bottom:4px solid #D3DFC8;
+	padding: 1px;
 }
 	#property-search .property-list-search
 {
@@ -999,7 +1000,7 @@
 	position:relative;
 	top:25px;
 	/*padding:7px 15px*/
-	height: 45px;
+	height: 35px;
 }
 	#aside-property-search .aside form
 {

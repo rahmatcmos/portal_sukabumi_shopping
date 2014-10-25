@@ -4,3 +4,34 @@ $(document).ready(function(){function a(){$(".inlinesparkline").sparkline("html"
 $(document).ready(function() {
   $('#top-menu-bar').scrollToFixed();
 });
+
+$(document).ready(function() {
+	$("#wizard").bwizard();
+});
+
+$(document).ready(function() {
+var config = {
+  '.chosen-select'           : {},
+  '.chosen-select-deselect'  : {allow_single_deselect:true},
+  '.chosen-select-no-single' : {disable_search_threshold:10},
+  '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+  '.chosen-select-width'     : {width:"95%"}
+}
+for (var selector in config) {
+  $(selector).chosen(config[selector]);
+}
+});
+
+
+$(document).ready(function() {
+    $("#toTop").scrollToTop(1000);
+});
+
+$(document).ready(function() {
+    $(".tooltipsku").tooltip();
+});
+
+function populateList(a){
+  a = document.getElementById(a.value);
+  alert(a);
+}
