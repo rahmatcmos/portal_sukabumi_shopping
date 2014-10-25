@@ -17,3 +17,14 @@
 		</div>
 	</div>
 </section>
+
+<section class="suported">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- <div class="col-md-6">Portal Jual Beli Online Sukabumi Shopping</div>
+          <div class="col-md-6">Selamat Datang, User</div> -->
+        </div>
+      </div>
+    </div>  
+</section>

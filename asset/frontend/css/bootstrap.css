@@ -7306,3 +7306,8 @@ opacity: .2;
 .display-none{
   display:none;
 }
+
+.suported{
+  background-color: #003366;
+  padding: 20px;
+}
