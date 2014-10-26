@@ -11,43 +11,14 @@
 			$this->output->enable_profiler(TRUE);
 		}
 		
-		public function index($offset=0)
+		public function index()
 		{
 			$ceklogin = $this->simpleauth->cekBelumLogin();
 			if ($ceklogin) {
 				redirect ('backend/login');
 			}
 
-			// tentukan jumlah data per halaman
-			$perpage = 3;
-			
-			// konfigurasi tampilan paging
-			$config = array(
-			'base_url'   => site_url('backend/users/index/'),
-			'total_rows' => count($this->users->get_all()->result()),
-			'per_page'   => $perpage,
-			);
-
-			// style pagination with twitter bootstrap
-			$config['full_tag_open']  = '<ul class="pagination pagination-xs m-top-none pull-right">';
-			$config['full_tag_close'] = '</ul>';            
-			$config['prev_link']      = 'Previvous';
-			$config['prev_tag_open']  = '<li>';
-			$config['prev_tag_close'] = '</li>';
-			$config['next_link']      = 'Next';
-			$config['next_tag_open']  = '<li>';
-			$config['next_tag_close'] = '</li>';
-			$config['cur_tag_open']   = '<li class="active"><a href="#">';
-			$config['cur_tag_close']  = '</a></li>';
-			$config['num_tag_open']   = '<li>';
-			$config['num_tag_close']  = '</li>';
-			
-			// inisialisasi pagination dan config
-			$this->pagination->initialize($config);
-
-			$limit['perpage'] = $perpage;
-			$limit['offset']  = $offset;
-			$data['users']    = $this->users->get_all($limit)->result();
+			$data['users']    = $this->users->get_all()->result();
 
 			$this->load->view('backend/home/head');
 			$this->load->view('backend/home/top-navbar');

@@ -14,17 +14,27 @@
 			</div>
 			<div class="panel-body">
 				<div class="row">
-					<div class="col-md-2 col-sm-4">
+					<div class="col-md-5 col-sm-3">
 						<a href="<?php echo base_url('backend/users/add') ?>"><button class="btn btn-info btn-sm">Create New</button></a>
 					</div>
-					<div class="col-md-2 col-sm-4">
+					<div class="col-md-2 col-sm-3">
 						<select id="columns" onchange="sorter.search('query')" class="form-control"></select>
 					</div>
-					<div class="col-md-3 col-sm-4">
-						<input type="text" id="query" onkeyup="sorter.search('query')" class="form-control" placeholder="Kata Pencarian">
+					<div class="col-md-2 col-sm-3">
+						<select id="tablelocation" class="form-control" onchange="sorter.size(this.value)">
+							<option value="5">5</option>
+							<option value="10" selected="selected">10</option>
+							<option value="20">20</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<input type="text" id="query" onkeyup="sorter.search('query')" class="form-control" placeholder="Masukan Kata Pencarian">
 					</div>
 				</div>
 			</div>
+			<div class="padding-md clearfix">
 			<table cellpadding="0" cellspacing="0" border="0" id="table" class="table table-striped table-hover tinytable">
 				<thead>
 					<tr>
@@ -143,31 +153,23 @@
 			<div id="tablefooter">
 				<div id="tablenav">
 					<div class="row">
-						<div class="col-sm-3 col-sm-3">
+						<div class="col-md-10 col-xs-3">
 							<img src="<?php echo base_url('asset/backend/images/first.gif'); ?>" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
 							<img src="<?php echo base_url('asset/backend/images/previous.gif'); ?>" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
 							<img src="<?php echo base_url('asset/backend/images/next.gif'); ?>" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
 							<img src="<?php echo base_url('asset/backend/images/last.gif'); ?>" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
 						</div>
-						<div class="col-sm-3 col-sm-3">
+						<div class="col-md-1 col-xs-3">
 							<select class="form-control" id="pagedropdown"></select>
 						</div>
-						<div class="col-sm-3 col-sm-3">
-							<div class="btn btn-info btn-sm"><a class="button blue" href="javascript:sorter.showall()">view all</a></div>
+						<div class="col-md-1 col-xs-3">
+							<a class="button blue" href="javascript:sorter.showall()"><div class="btn btn-info btn-xs">View all</div></a>
 						</div>
 					</div>
+					<div class="br5"></div>
+					<div class="br5"></div>
 				</div>
-					
-				<div class="col-sm-3 col-sm-3">
-					<select id="tablelocation" class="form-control" onchange="sorter.size(this.value)">
-						<option value="5">5</option>
-						<option value="10" selected="selected">10</option>
-						<option value="20">20</option>
-						<option value="50">50</option>
-						<option value="100">100</option>
-					</select>
-					<span class="txt-page">Entries Per Page</span>
-				</div>
+			</div>
 			</div>
 		</div>
 	</div>

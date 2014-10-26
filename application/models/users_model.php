@@ -2,13 +2,10 @@
 	
 	class Users_model extends CI_Model 
 	{	
-		public function get_all($limit=array()){
-			$this->db->select('*');
-			$this->db->from('users');
-			$this->db->order_by('id_users', 'desc');
-			if ($limit != NULL)
-				$this->db->limit($limit['perpage'], $limit['offset']);
-			return $this->db->get();
+		public function get_all(){
+			$this->db->join('users','profile.id_users=users.id_users');
+			$query = $this->db->get('profile');
+			return $query;
 		}
 
 		public function save_data($data1,$data2,$data3) {
