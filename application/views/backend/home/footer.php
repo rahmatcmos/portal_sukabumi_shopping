@@ -14,5 +14,7 @@
 	<script src="<?php echo base_url('asset/backend/js/jquery.popupoverlay.min.js'); ?>"></script>
 	<script src="<?php echo base_url('asset/backend/js/chosen.jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('asset/backend/js/endless_wizard.js'); ?>"></script>
+	<script src="<?php echo base_url('asset/backend/js/tinytable.js'); ?>"></script>
+	<script src="<?php echo base_url('asset/backend/js/script.js'); ?>"></script>
   </body>
 </html>

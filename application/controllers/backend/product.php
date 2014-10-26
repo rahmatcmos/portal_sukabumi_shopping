@@ -11,7 +11,6 @@ class Product extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('backend/home/head');
-		$this->load->view('backend/home/theme-setting');
 		$this->load->view('backend/home/top-navbar');
 		$this->load->view('backend/home/sidebar-right');
 		$this->load->view('backend/product/view_all');

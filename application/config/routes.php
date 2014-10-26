@@ -40,12 +40,7 @@
 
 $route['default_controller'] = "home";
 $route['404_override'] = '';
-
-
-$route['backend/users'] = 'backend/users';
-$route['backend/users/index'] = 'backend/users/index';
-$route['backend/users/(:num)'] = 'backend/users/$1';
-$route['backend/users/index/(:num)'] = 'backend/users/index/$1';
+$route['portal_sukabumi_shopping/(:any)'] = 'portal_sukabumi_shopping/backend/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
