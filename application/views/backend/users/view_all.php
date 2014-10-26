@@ -28,40 +28,35 @@
 								<span class="custom-checkbox"></span>
 							</label>
 						</th>
-						<th>Nama</th>
+						<th>Username</th>
 						<th>Email</th>
 						<th>Status</th>
 						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
+					<?php  
+						$no = 0;
+							foreach ($users as $row) {
+								$no++;
+					?>
 					<tr class="">
-						<td>
-							<label class="label-checkbox">
-								<input type="checkbox" class="chk-row">
-								<span class="custom-checkbox"></span>
-							</label>
-						</td>
-						<td>Fathan Rohman</td>
-						<td>karir.fathan@gmail.com</td>
+						<td><?php echo $no; ?></td>
+						<td><?php echo $row->username ?></td>
+						<td><?php echo $row->email ?></td>
 						<td><span class="label label-info">Active</span></td>
 						<td>
 							<a href=""><button class="btn btn-warning btn-xs">Edit</button></a>
 							<a href=""><button class="btn btn-danger btn-xs">Delete</button></a>
 						</td>
 					</tr>
+					<?php
+						}
+					?>
 				</tbody>
 			</table>
 			<div class="panel-footer clearfix">
-				<ul class="pagination pagination-xs m-top-none pull-right">
-					<li class="disabled"><a href="#">Previous</a></li>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#">Next</a></li>
-				</ul>
+				<?php echo $this->pagination->create_links(); ?>
 			</div>
 		</div>
 	</div>

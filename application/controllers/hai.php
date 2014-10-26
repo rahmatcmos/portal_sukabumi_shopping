@@ -1,29 +1,24 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
-	class Users extends CI_Controller {
+	class Hai extends CI_Controller {
 	
 		public function __construct() {
 			parent::__construct();
 			$this->load->model('users_model','users');
 			$this->load->library('simpleauth');
-			$this->load->library('pagination');
 			$this->load->library('upload');
 			$this->output->enable_profiler(TRUE);
 		}
 		
 		public function index($offset=0)
 		{
-			$ceklogin = $this->simpleauth->cekBelumLogin();
-			if ($ceklogin) {
-				redirect ('backend/login');
-			}
 
 			// tentukan jumlah data per halaman
 			$perpage = 3;
 			
 			// konfigurasi tampilan paging
 			$config = array(
-			'base_url'   => site_url('backend/users/index/'),
+			'base_url'   => site_url('hai/index/'),
 			'total_rows' => count($this->users->get_all()->result()),
 			'per_page'   => $perpage,
 			);

@@ -47,7 +47,7 @@ class Login extends CI_Controller {
 			$this->session->set_userdata($array_items);
 				redirect(site_url('backend/home'));
 			}else{
-				$this->session->set_flashdata("notification", "<div class=\"wrong\">Username dan Password Salah!</div>");
+				$this->session->set_flashdata("notification_confirm_password", "<div class=\"wrong\">Username dan Password Salah!</div>");
 				redirect(site_url('backend/login'));
 			}
 		}

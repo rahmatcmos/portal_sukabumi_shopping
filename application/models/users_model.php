@@ -1,7 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
-	class Users_model extends CI_Model {
-		
+	class Users_model extends CI_Model 
+	{	
+		public function get_all($limit=array()){
+			$this->db->select('*');
+			$this->db->from('users');
+			$this->db->order_by('id_users', 'desc');
+			if ($limit != NULL)
+				$this->db->limit($limit['perpage'], $limit['offset']);
+			return $this->db->get();
+		}
+
 		public function save_data($data1,$data2,$data3) {
 		    $this->db->trans_start();
 

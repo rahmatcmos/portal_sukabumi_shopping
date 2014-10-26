@@ -13,6 +13,8 @@
 					USERS
 				</div>
 				<div class="panel-body">
+					<?php echo validation_errors(); ?>
+					<?php echo $this->session->flashdata('notification_confirm_password')?>
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Username</label>
 						<div class="col-lg-6">
