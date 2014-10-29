@@ -131,7 +131,14 @@
 							<a href="<?php echo base_url().'backend/users/delete_data_admins/'.$id; ?>" onclick="return confirm('Do you want to delete this row?')"><button class="btn btn-danger btn-xs">Delete</button></a>
 						</td>
 					</tr>
-					 <?php } }else{ echo information('Data Belum Ada!'); } ?>
+					<?php 
+							} 
+						}else{ 
+							echo "<tr><td colspan='6'>";
+							echo information('Data Belum Ada!'); 
+							echo "</td></tr>";
+						} 
+					?>
 				</tbody>
 			</table>
 			<div class="br5"></div>

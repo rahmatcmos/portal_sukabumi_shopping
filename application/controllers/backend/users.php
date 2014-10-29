@@ -6,6 +6,8 @@ class Users extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('users_model','users');
+		$this->load->model('profile_model','profile');
+		$this->load->model('information_model','information');
 		$this->load->library('simpleauth');
 		$this->load->library('upload');
 	}
@@ -60,7 +62,7 @@ class Users extends CI_Controller {
 
 	public function view_all_admins()
 	{
-		$ceklogin = $this->simpleauth->cekBelumLogin();
+		$ceklogin             = $this->simpleauth->cekBelumLogin();
 		$data_admins['users'] = $this->users->get_all_by_admins();
 		$this->load->view('backend/home/head');
 		$this->load->view('backend/home/top-navbar');
@@ -72,7 +74,7 @@ class Users extends CI_Controller {
 
 	public function view_all_users()
 	{
-		$ceklogin = $this->simpleauth->cekBelumLogin();
+		$ceklogin            = $this->simpleauth->cekBelumLogin();
 		$data_users['users'] = $this->users->get_all_by_users();
 		$this->load->view('backend/home/head');
 		$this->load->view('backend/home/top-navbar');
@@ -270,14 +272,33 @@ class Users extends CI_Controller {
 		}
 	}
 
-	public function update_admins()
+	public function update_admins($id)
 	{
+		$cekLogin            = $this->simpleauth->cekBelumLogin();
+		$data['rows']        = $this->users->get_by_id($id);
+		$data['profile']     = $this->profile->get_all()->result();
+		$data['information'] = $this->information->get_all()->result();
+		$this->load->view('backend/home/head');
+		$this->load->view('backend/home/top-navbar');
+		$this->load->view('backend/home/sidebar-right');
+		$this->load->view('backend/users/update_admins', $data);
+		$this->load->view('backend/home/scroll-to-top');
+		$this->load->view('backend/home/footer');
 
 	}
 
-	public function update_users()
+	public function update_users($id)
 	{
-
+		$cekLogin            = $this->simpleauth->cekBelumLogin();
+		$data['rows']        = $this->users->get_by_id($id);
+		$data['profile']     = $this->profile->get_all()->result();
+		$data['information'] = $this->information->get_all()->result();
+		$this->load->view('backend/home/head');
+		$this->load->view('backend/home/top-navbar');
+		$this->load->view('backend/home/sidebar-right');
+		$this->load->view('backend/users/update_admins', $data);
+		$this->load->view('backend/home/scroll-to-top');
+		$this->load->view('backend/home/footer');
 	}
 
 	public function update_data_admins()
