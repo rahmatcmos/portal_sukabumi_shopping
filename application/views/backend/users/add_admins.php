@@ -7,14 +7,15 @@
 		</ul>
 	</div>
 	<div class="padding-md">
-		<form id="formToggleLine" action="<?php echo base_url('backend/users/save_data') ?>" enctype="multipart/form-data" method="POST" class="form-horizontal no-margin form-border">
+		<form id="formToggleLine" action="<?php echo base_url('backend/users/save_data_admins') ?>" enctype="multipart/form-data" method="POST" class="form-horizontal no-margin form-border">
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					USERS
 				</div>
 				<div class="panel-body">
-					<?php echo validation_errors(); ?>
-					<?php echo $this->session->flashdata('notification_confirm_password')?>
+					<?php echo $this->session->flashdata('msg'); ?>
+					<input type="hidden" name="role_id" value="1">
+					<input type="hidden" name="active" value="1">
 					<div class="form-group">
 						<label class="col-lg-2 control-label">Username</label>
 						<div class="col-lg-6">

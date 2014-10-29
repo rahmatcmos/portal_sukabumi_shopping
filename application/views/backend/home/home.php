@@ -30,6 +30,7 @@
 	</div>
 
 	<div class="grey-container shortcut-wrapper">
+		<?php echo $this->session->flashdata('msg')?>
 		<a href="#" class="shortcut-link">
 			<span class="shortcut-icon">
 				<i class="fa fa-bar-chart-o"></i>
@@ -69,8 +70,8 @@
 								<span class="m-left-xs">Sales</span>
 							</div>
 						</div>
-					</div><!-- /panel -->
-				</div><!-- /.col -->
+					</div>
+				</div>
 				<div class="col-md-3 col-sm-4">
 					<div class="panel panel-default panel-stat2 bg-warning">
 						<div class="panel-body">
@@ -82,8 +83,8 @@
 								<div class="title">Visits</div>
 							</div>
 						</div>
-					</div><!-- /panel -->
-				</div><!-- /.col -->
+					</div>
+				</div>
 				<div class="col-md-3 col-sm-4">
 					<div class="panel panel-default panel-stat2 bg-danger">
 						<div class="panel-body">
@@ -95,8 +96,8 @@
 								<div class="title">Orders</div>
 							</div>
 						</div>
-					</div><!-- /panel -->
-				</div><!-- /.col -->
+					</div>
+				</div>
 				<div class="col-md-3 col-sm-4">
 					<div class="panel panel-default panel-stat2">
 						<div class="panel-body">
@@ -108,9 +109,9 @@
 								<div class="title">Members</div>
 							</div>
 						</div>
-					</div><!-- /panel -->
-				</div><!-- /.col -->
+					</div>
+				</div>
 			</div>
 		</div>
-	</div><!-- /main-container -->
+	</div>
 </div>

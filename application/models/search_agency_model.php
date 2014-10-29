@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
-	class Locations_model extends CI_Model {
+	class Search_agency_model extends CI_Model {
 	
 		public function __construct()
 		{

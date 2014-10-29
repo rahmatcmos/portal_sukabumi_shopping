@@ -31,7 +31,8 @@
 		<form name="login-form" class="login-form" action="<?php echo base_url('backend/users/DoLogin'); ?>" method="POST">
 			<div class="header">
 				<h1>Sukabumi Shopping</h1>
-				<?php echo $this->session->flashdata('msg')?>
+				<span><?php echo validation_errors(); ?>
+				<?php echo $this->session->flashdata('notification')?>
 			</div>
 			<div class="content">
 				<input name="username" type="text" class="input username" value="Username" onfocus="this.value=''" placeholder="username">

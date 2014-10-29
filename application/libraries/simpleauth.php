@@ -3,7 +3,7 @@
 class Simpleauth
 {
 	var $CI;
-	var $user_table = 'admin';
+	var $user_table = 'users';
 
 	/**
 	 * Create a user account
@@ -74,7 +74,7 @@ class Simpleauth
 		}
 		
 		//Check against user table
-		$this->CI->db->where('id_admin', $user_id);
+		$this->CI->db->where('id_users', $user_id);
 		$query = $this->CI->db->get_where($this->user_table);
 		
 		if ($query->num_rows() == 0){ // user don't exists
@@ -82,7 +82,7 @@ class Simpleauth
 		}
 		
 
-		$this->CI->db->where('id_admin', $user_id);
+		$this->CI->db->where('id_users', $user_id);
 
 		if(!$this->CI->db->update($this->user_table, $data)) //There was a problem! 
 			return false;           
@@ -138,11 +138,10 @@ class Simpleauth
 
 			//Set session data
 			unset($user_data['password']);
-			$user_data_log['id_admin'] = $user_data['id_admin']; // for compatibility with Simplelogin
-			$user_data_log['username'] = $user_data['username']; // for compatibility with Simplelogin
-			$user_data_log['nama_admin'] = $user_data['nama_admin'];
-			$user_data_log['email_admin'] = $user_data['email_admin'];
-			$user_data_log['role_id'] = $user_data['role_id'];
+			$user_data_log['id_users']  = $user_data['id_users']; // for compatibility with Simplelogin
+			$user_data_log['username']  = $user_data['username']; // for compatibility with Simplelogin
+			$user_data_log['email']     = $user_data['email'];
+			$user_data_log['role_id']   = $user_data['role_id'];
 			$user_data_log['logged_in'] = true;
 			$this->CI->session->set_userdata($user_data_log);
 			
@@ -157,12 +156,12 @@ class Simpleauth
 	function cekSudahLogin(){
 		$this->CI =& get_instance();
 		if($this->CI->session->userdata('logged_in')==true)
-			redirect('backend/home');
+			redirect('backend/users/index');
 	}	
 	function cekBelumLogin(){
 		$this->CI =& get_instance();
 		if($this->CI->session->userdata('logged_in')==false)
-			redirect('backend/login');
+			redirect('backend/users/login');
 	}
 
 	/**
@@ -190,7 +189,7 @@ class Simpleauth
 		if(!is_numeric($user_id))
 			return false;     
 
-		return $this->CI->db->delete($this->user_table, array('id_admin' => $user_id));
+		return $this->CI->db->delete($this->user_table, array('id_users' => $user_id));
 	}
 	
 	
@@ -232,6 +231,5 @@ class Simpleauth
 			return TRUE;
 		}
 	}
-	
 }
 ?>

@@ -134,23 +134,21 @@
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kota/Kabupaten</label>
-										<select class="form-control">
-											<option>Pilih Daerah ...</option>
-											<option>Kota Sukabumi</option>
-											<option>Kabupaten Sukabumi</option>
+										<select name="city" id="city" class="form-control" onChange="get_agency(this.value);">
+											<option value="">Pilih Daerah ...</option>
+											<?php  
+												foreach ($city as $rows) {
+											?>
+											<option value="<?php echo $rows->id_search_city; ?>"><?php echo $rows->city_name; ?></option>
+											<?php
+												}
+											?>
 										</select>
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kecamatan</label>
-										<select class="form-control" data-bootstrap="tooltip" data-original-title="Pilih Lokasi Kecamatan">
+										<select class="form-control" name="agency_name" id="agency">
 											<option>Pilih Daerah ...</option>
-											<option>Kecamatan Gunung Puyuh</option>
-											<option>Kecamatan Cibeureum</option>
-											<option>Kecamatan Lembur Situ</option>
-											<option>Kecamatan Baros</option>
-											<option>Kecamatan Warudoyong</option>
-											<option>Kecamatan Cikole</option>
-											<option>Kecamatan Citamiang</option>
 										</select>
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">

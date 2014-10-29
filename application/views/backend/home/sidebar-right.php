@@ -23,7 +23,7 @@
 		<div class="main-menu">
 			<ul>
 				<li>
-					<a href="<?php echo base_url('backend/home'); ?>">
+					<a href="<?php echo base_url('backend/users/index'); ?>">
 						<span class="menu-icon"><i class="fa fa-desktop fa-lg"></i></span>
 						<span class="text">Dashboard</span>
 						<span class="menu-hover"></span>
@@ -37,10 +37,10 @@
 						<span class="menu-hover"></span>
 					</a>
 					<ul class="submenu">
-						<li><a href="<?php echo base_url('backend/users/add'); ?>"><span class="submenu-label">Create Admin</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/add_admins'); ?>"><span class="submenu-label">Create Admin</span></a></li>
 					</ul>
 					<ul class="submenu">
-						<li><a href="<?php echo base_url('backend/users/'); ?>"><span class="submenu-label">View All</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/view_all_admins'); ?>"><span class="submenu-label">View All</span></a></li>
 					</ul>
 				</li>
 				<li class="openable open">
@@ -50,13 +50,10 @@
 						<span class="menu-hover"></span>
 					</a>
 					<ul class="submenu">
-						<li><a href="<?php echo base_url('backend/users/add'); ?>"><span class="submenu-label">Create Member</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/add_users'); ?>"><span class="submenu-label">Create Member</span></a></li>
 					</ul>
 					<ul class="submenu">
-						<li><a href="<?php echo base_url('backend/users/'); ?>"><span class="submenu-label">View All</span></a></li>
-					</ul>
-					<ul class="submenu">
-						<li><a href="<?php echo base_url('backend/users/user_pending'); ?>"><span class="submenu-label">Member Pending</span></a></li>
+						<li><a href="<?php echo base_url('backend/users/view_all_users'); ?>"><span class="submenu-label">View All</span></a></li>
 					</ul>
 				</li>
 

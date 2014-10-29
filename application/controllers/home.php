@@ -6,14 +6,13 @@ class Home extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('locations_model','locations');
+		$this->load->model('search_agency_model','agency');
 
 	}
 
 	public function index()
 	{
-		// GET CITY FROM TABLE SEARCH CITY
-		$data['city']  = $this->locations->Get_search_city();
+		$data['city']  = $this->agency->Get_search_city();
 
 		$this->load->view('shareds/head');
 		$this->load->view('shareds/nav_bar');
@@ -28,7 +27,7 @@ class Home extends CI_Controller
 	public function Get_Agency()
 	{
 		$key    = $this->input->post('key');
-		$agency = $this->locations->Get_id_search_city($key);
+		$agency = $this->agency->Get_id_search_city($key);
 
 		foreach ($agency as $row){
 			echo '<option value="'.$row['id_search_agency'].'" class="form-control">Kec. '.$row['agency_name'].'</option>';
