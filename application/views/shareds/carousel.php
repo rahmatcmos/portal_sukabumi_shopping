@@ -171,7 +171,11 @@
 <section class="property-search-bottom">
 	<div class="container">
 		<div class="row">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi enim perferendis tenetur deleniti dolores eius, totam non at perspiciatis. Magni pariatur aliquam minus labore, ab alias at itaque et.
+			<div class="col-md-12">
+				Apa itu Sukabumi shopping?
+				<div class="br10"></div>
+				sukabumishopping.com merupakan situs online classified terbesar di Kota Sukabumi Jawa barat. Sukabumi shopping menyediakan media yang mudah, cepat dan gratis bagi para penjual untuk memasang iklan dan sekaligus bagi pembeli untuk mencari beragam produk barang bekas dan barang baru untuk kebutuhan sehari-hari.
+			</div>
 		</div>
 	</div>
 </section>

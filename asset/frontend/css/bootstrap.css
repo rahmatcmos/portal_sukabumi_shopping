@@ -1641,7 +1641,7 @@ legend {
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -4654,17 +4654,17 @@ a.thumbnail.active {
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+ /* background-color: #fff;
+  border: 1px solid #ddd;*/
 }
 .list-group-item:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  /*border-top-left-radius: 4px;
+  border-top-right-radius: 4px;*/
 }
 .list-group-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  /*border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;*/
 }
 .list-group-item > .badge {
   float: right;
@@ -4681,7 +4681,9 @@ a.list-group-item .list-group-item-heading {
 a.list-group-item:hover,
 a.list-group-item:focus {
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #9ad268;
+  color: #FFF;
+  pa
 }
 a.list-group-item.active,
 a.list-group-item.active:hover,
@@ -4822,12 +4824,12 @@ a.list-group-item-danger.active:focus {
   border-bottom: 0;
 }
 .panel > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  /*border-top-left-radius: 3px;
+  border-top-right-radius: 3px;*/
 }
 .panel > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  /*border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;*/
 }
 .panel-heading + .list-group .list-group-item:first-child {
   border-top-width: 0;
@@ -5956,6 +5958,13 @@ td.visible-print {
   height: 20px;
   float: left;
 }
+
+.br30{
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+
 .br60{
   width: 100%;
   height: 60px;
@@ -7207,10 +7216,10 @@ opacity: .2;
 }
 
 .alert.alert-abu {
-  background: #42454e;
+  background: #9ad268;
   padding: 1px;
   border-radius: 5px;
-  box-shadow: 1px 2px #E02121;
+  /*box-shadow: 1px 2px #E02121;*/
 }
 
 .alert.alert-abu-top-search {
@@ -7308,6 +7317,28 @@ opacity: .2;
 }
 
 .suported{
-  background-color: #003366;
+  background-color: #7DC937;
   padding: 20px;
 }
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-18{
+  font-size: 18px;
+}
+
+.border-bottom{
+  border-bottom: 1px solid #CCC;
+  margin-left: 13px;
+}
+
+.padding-13{
+  padding-left: 1px;
+}
+
+.padding-18{
+  padding-left: 13px;
+}
+

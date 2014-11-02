@@ -22,7 +22,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="<?php echo base_url('home'); ?>">Sukabumi Shopping</a>
+						<a class="navbar-brand italic" href="<?php echo base_url('home'); ?>">SUKABUMI SHOPPING</a>
 					</div>
 					
 					<ul class="nav navbar-nav navbar-right">
@@ -59,9 +59,9 @@
 					<h3 align="center">MASUK</h3>
 				</div>
 				<div class="modal-body">
-					<form accept-charset="UTF-8" action="<?php echo base_url('') ?>" class="" method="post">
+					<form accept-charset="UTF-8" action="<?php echo base_url('backend/users/login') ?>" class="" method="post">
 						<div style="display:none">
-							<input name="utf8" type="hidden" value="✓">
+							<input name="utf8" type="hidden" value="">
 							<input name="authenticity_token">
 						</div>
 						<fieldset>
@@ -88,11 +88,11 @@
 							</div>
 							<div class="col-md-12 margin-bottom10 padding0">
 								<input name="user[remember_me]" type="hidden" value="0">
-								<input class="grey remember" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1">
+								<input class="grey remember" id="user_remember_me" name="user_remember_me" type="checkbox" value="1">
 								<span>Biarkan saya tetap masuk</span>
 							</div>
 							<div class="col-md-12 margin-bottom10 padding0">
-								<a href="/users/password/new">Lupa Kata Sandi</a>
+								<a href="#">Lupa Kata Sandi</a>
 							</div>
 							<div class="form-group">
 								<div class="controls">

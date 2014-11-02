@@ -675,8 +675,8 @@
 }
 .grid-layout .prop-item .thumbnail .prop-price
 {
-	font-size:22px;
-	font-weight:700;
+	font-size:15px;
+	font-weight:300;
 	color:#e74c3c
 }
 .grid-layout .prop-item .thumbnail .prop-price span
@@ -793,8 +793,8 @@
 }
 .list-layout .prop-item .thumbnail .prop-price
 {
-	font-size:22px;
-	font-weight:700;
+	font-size: 15px;
+	font-weight: 300;
 	color:#e74c3c;
 	position:absolute;
 	right:20px;
@@ -2361,3 +2361,23 @@ header .header-top {
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 /*end javacript scroll back to top*/
+
+
+.border-panel-ccc{
+	background-color: #FFF;
+	border: 1px solid #3a599c;
+}
+
+.margin-top{
+	margin-top: 25px;
+}
+
+.border-top-footer-panel{
+	border-top: #3a599c;
+}
+
+.panel-login-color{
+	background: #3a599c;
+	color: #FFF;
+	font-family: sans-serif;
+}

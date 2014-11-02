@@ -51,11 +51,11 @@ class Users extends CI_Controller {
 
 	public function index()
 	{
-		$cekLogin = $this->simpleauth->cekBelumLogin();
-		$this->load->view('backend/home/head');
-		$this->load->view('backend/home/top-navbar');
-		$this->load->view('backend/home/sidebar-right');
-		$this->load->view('backend/home/home');
-		$this->load->view('backend/home/scroll-to-top');
-		$this->load->view('backend/home/footer');
+		$this->load->view('shareds/head');
+		$this->load->view('shareds/nav_bar');
+		$this->load->view('shareds/mini_property');
+		$this->load->view('users/home');
+		$this->load->view('shareds/footer');
+		$this->load->view('shareds/javascript');
 	}
+}

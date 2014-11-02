@@ -58,7 +58,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="panel-group" id="accordion">
+							<!-- <div class="panel-group" id="accordion">
 								<div class="panel panel-default panel-search">
 									<div class="panel-heading">
 										<h4 class="panel-title">
@@ -71,7 +71,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="panel-group" id="accordion">
 								<div class="panel panel-default panel-search">
 									<div class="panel-heading">
@@ -132,7 +132,7 @@
 												<h3>Judul Iklan</h3>
 												<span class="small-font grey italic">dibuat Senin, 29 Mei 2010</span>
 												<span class="prop-address">Kota Sukabumi, Kecamatan Gunung Puyuh</span>
-												<div class="prop-price">Rp. 10.000.000</div>
+												<div class="prop-price">Rp. 10.000.000,-/NEGO</div>
 											</div>
 										</div>
 									</a>
@@ -152,7 +152,7 @@
 												<h3>Judul Iklan</h3>
 												<span class="small-font grey italic">dibuat Senin, 29 Mei 2010</span>
 												<span class="prop-address">Kota Sukabumi, Kecamatan Gunung Puyuh</span>
-												<div class="prop-price">Rp. 10.000.000</div>
+												<div class="prop-price">Rp. 10.000.000,-/NEGO</div>
 											</div>
 										</div>
 									</a>
@@ -172,7 +172,7 @@
 												<h3>Judul Iklan</h3>
 												<span class="small-font grey italic">dibuat Senin, 29 Mei 2010</span>
 												<span class="prop-address">Kota Sukabumi, Kecamatan Gunung Puyuh</span>
-												<div class="prop-price">Rp. 10.000.000</div>
+												<div class="prop-price">Rp. 10.000.000,-/NEGO</div>
 											</div>
 										</div>
 									</a>
@@ -192,7 +192,7 @@
 												<h3>Judul Iklan</h3>
 												<span class="small-font grey italic">dibuat Senin, 29 Mei 2010</span>
 												<span class="prop-address">Kota Sukabumi, Kecamatan Gunung Puyuh</span>
-												<div class="prop-price">Rp. 10.000.000</div>
+												<div class="prop-price">Rp. 10.000.000,-/NEGO</div>
 											</div>
 										</div>
 									</a>
@@ -212,7 +212,7 @@
 												<h3>Judul Iklan</h3>
 												<span class="small-font grey italic">dibuat Senin, 29 Mei 2010</span>
 												<span class="prop-address">Kota Sukabumi, Kecamatan Gunung Puyuh</span>
-												<div class="prop-price">Rp. 10.000.000</div>
+												<div class="prop-price">Rp. 10.000.000,-/NEGO</div>
 											</div>
 										</div>
 									</a>
@@ -232,7 +232,7 @@
 												<h3>Judul Iklan</h3>
 												<span class="small-font grey italic">dibuat Senin, 29 Mei 2010</span>
 												<span class="prop-address">Kota Sukabumi, Kecamatan Gunung Puyuh</span>
-												<div class="prop-price">Rp. 10.000.000</div>
+												<div class="prop-price">Rp. 10.000.000,-/NEGO</div>
 											</div>
 										</div>
 									</a>

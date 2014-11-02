@@ -11,7 +11,7 @@
 										<h2>Nolan Xlite X802 Dapat 2 Visor</h2>
 									</div>
 									<div class="col-xs-4">
-										<span class="prop-price">Rp. 3.800.000</span>
+										<span class="prop-price">Rp. 3.800.000,- /NEGO</span>
 									</div>
 								</div>
 							</div>
@@ -138,7 +138,7 @@
 								<div class="panel panel-default panel-search">
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											Supported Advertiser
+											Supported
 										</h4>
 									</div>
 									<div id="collapseOne" class="panel-collapse collapse in">

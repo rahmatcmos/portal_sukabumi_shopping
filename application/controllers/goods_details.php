@@ -15,7 +15,6 @@ class Goods_details extends CI_Controller
 		$this->load->view('shareds/nav_bar');
 		$this->load->view('shareds/mini_property');
 		$this->load->view('goods_details');
-		$this->load->view('shareds/foo');
 		$this->load->view('shareds/footer');
 		$this->load->view('shareds/javascript');
 	}	

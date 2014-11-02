@@ -5,35 +5,43 @@
 				<div class="col-sm-12 col-md-12">
 					<div class="inner">
 						<form class="form-inline form-search clearfix" role="form">
-							<form class="form-inline form-search clearfix" role="form">
-								<div class="form-group col-sm-6 col-lg-3">
-									<label for="">Kata Pencarian</label>
-									<input type="text" class="form-control" placeholder="Masukan Kata Pencarian"></div>
-								<div class="form-group col-sm-6 col-lg-4">
-									<label for="">Kota/Kabupaten</label>
-									<select class="form-control">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div>
-								<div class="form-group col-sm-6 col-lg-4">
-									<label for="">Kecamatan</label>
-									<select class="form-control">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div>
-								<div class="form-group col-sm-2 col-lg-1">
-									<label>&nbsp;</label>
-									<button type="submit" class="btn btn-flat-asphalt btn-search2">Cari</button>
-								</div>
-							</form>
+							<div class="form-group col-sm-3 col-lg-2">
+								<label for="">Kategori barang baru</label>
+								<select class="form-control">
+									<option>Pilih kategori ...</option>
+									<option>Mobil</option>
+									<option>Motor</option>
+									<option>Property</option>
+									<option>Elektronik dan Gadget</option>
+									<option>Makanan dan Minuman</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-3 col-lg-3">
+								<label for="">Kota/Kabupaten</label>
+								<select name="city" id="city" class="form-control" onChange="get_agency(this.value);">
+									<option value="">Pilih Daerah ...</option>
+									<?php  
+									foreach ($city as $row) {
+										?>
+										<option value="<?php echo $row->id_search_city; ?>"><?php echo $row->city_name; ?></option>
+										<?php
+									}
+									?>
+								</select>
+							</div>
+							<div class="form-group col-sm-3 col-lg-3">
+								<label for="">Kecamatan</label>
+								<select class="form-control" name="agency_name" id="agency">
+									<option>Pilih Daerah ...</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-3 col-lg-3">
+								<label for="">Kata Pencarian</label>
+								<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Masukan Kata Pencarian">
+							</div>
+							<div class="form-group col-sm-1 col-lg-1 margin-top">
+								<button type="submit" class="btn btn-flat-asphalt btn-search2">Cari</button>
+							</div>
 						</form>
 					</div>
 				</div>
