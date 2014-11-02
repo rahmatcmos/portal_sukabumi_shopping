@@ -58,4 +58,24 @@ class Users extends CI_Controller {
 		$this->load->view('shareds/footer');
 		$this->load->view('shareds/javascript');
 	}
+
+	public function profile()
+	{
+		$this->load->view('shareds/head');
+		$this->load->view('shareds/nav_bar');
+		$this->load->view('shareds/mini_property');
+		$this->load->view('users/user_profile');
+		$this->load->view('shareds/footer');
+		$this->load->view('shareds/javascript');
+	}
+
+	public function my_ads()
+	{
+		$this->load->view('shareds/head');
+		$this->load->view('shareds/nav_bar');
+		$this->load->view('shareds/mini_property');
+		$this->load->view('users/my_ads');
+		$this->load->view('shareds/footer');
+		$this->load->view('shareds/javascript');
+	}
 }
