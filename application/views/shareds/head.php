@@ -16,6 +16,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="#">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/frontend/css/bootstrap.css'); ?>" media="screen">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/frontend/css/font-awesome.min.css'); ?>" media="screen">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/frontend/css/font-awesome.css'); ?>" media="screen">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/frontend/css/style.css'); ?>" media="screen">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/frontend/css/chosen.css'); ?>" media="screen">
 	<title>Sukabumi Shopping</title>

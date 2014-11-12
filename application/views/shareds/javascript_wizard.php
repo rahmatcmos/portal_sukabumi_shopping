@@ -8,7 +8,6 @@
 <script src="<?php echo base_url('asset/frontend/js/jquery-scrolltofixed.js'); ?>" type="text/javascript"></script>
 <script src="<?php echo base_url('asset/frontend/js/jquery.scrollToTop.min.js'); ?>" type="text/javascript"></script>
 <script src="<?php echo base_url('asset/frontend/js/chosen.jquery.js'); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url('asset/frontend/js/jquery_wizard.js'); ?>" type="text/javascript"></script>
 
 
 <script type="text/javascript" src="<?php echo base_url('asset/frontend/wizard/jquery-1.4.2.min.js'); ?>"></script>		
@@ -19,6 +18,7 @@
 <script type="text/javascript" src="<?php echo base_url('asset/frontend/wizard/jquery.form.wizard.js'); ?>"></script>
 <script type="text/javascript">
 	$(function(){
+
 		$("#demoForm").formwizard({ 
 			formPluginEnabled: true,
 			validationEnabled: true,

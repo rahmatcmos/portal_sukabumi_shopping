@@ -5538,16 +5538,16 @@ button.close {
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .5) 0%), color-stop(rgba(0, 0, 0, .0001) 100%));
-  /*background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
   background-repeat: repeat-x;
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  /*background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0001) 0%), color-stop(rgba(0, 0, 0, .5) 100%));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0001) 0%), color-stop(rgba(0, 0, 0, .5) 100%));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
 .carousel-control:hover,
@@ -5650,7 +5650,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+    bottom: -66px;
   }
 }
 .clearfix:before,
@@ -6944,11 +6944,6 @@ header #header-atas .location {
   font-weight: normal;
 }
 
-.text-center {
-  text-align: center;
-}
-
-
 .body_login{
   background:#FFF;
 }
@@ -7231,8 +7226,8 @@ opacity: .2;
 
 .alert.alert-abu {
   background: #9ad268;
-  padding: 1px;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 2px;
   /*box-shadow: 1px 2px #E02121;*/
 }
 
@@ -7307,7 +7302,7 @@ opacity: .2;
   font-family: 'Karla',sans-serif;
   color: #171f22;
   background: #FAFAFA;
-  padding: 50px;
+  padding: 30px;
   margin: 0 auto;
 }
 
@@ -7330,17 +7325,42 @@ opacity: .2;
   display:none;
 }
 
+.email-share{
+  background: #9ad268;
+  color: #333;
+  padding: 30px;
+  /*border-top: 3px solid #363E3F;*/
+  padding-bottom: 60px;
+  padding-top: 40px;
+  background-color: #FFFFFF;
+  border-bottom: 13px #000;
+}
+
 .suported{
-  background-color: #7DC937;
-  padding: 20px;
+  background: #FFFFFF;
+  color: #333;
+  padding: 30px;
+  /*border-top: 3px solid #363E3F;*/
+  padding-bottom: 60px;
+  padding-top: 40px;
+  background-color: #FFFFFF;
+  border-bottom: 13px #000;
 }
 
 .font-bold{
   font-weight: bold;
 }
 
+.font-16{
+  font-size: 16px;
+}
+
 .font-18{
   font-size: 18px;
+}
+
+.font-30{
+  font-size: 30px;
 }
 
 .border-bottom{
@@ -7360,6 +7380,24 @@ opacity: .2;
   padding-left: 13px;
 }
 
+.padding-170{
+  padding-left: 170px;
+}
+
 .position-right{
   float: right;
+}
+
+.margin-bottom-0{
+  margin-bottom: 0px;
+}
+
+.image-li{
+  line-height: 1.5em;
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png);
+}
+
+.ul-select-category{
+  list-style: none;
+  padding-left: 12px;
 }

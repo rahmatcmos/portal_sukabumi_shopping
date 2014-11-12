@@ -10,6 +10,7 @@
 						</div>
 						<div class="panel-body border-panel-ccc">
 							<div id="demoWrapper">
+
 								<h5 id="status"></h5>
 								<form id="demoForm" method="post" action="" class="bbq">
 									<div id="fieldWrapper">
@@ -63,9 +64,10 @@
 							</div>
 						</div>
 						<div class="panel-footer border-top-footer-panel panel-login-color"></div>
-					</section>
-				</div>
-				<div class="col-md-2"></div>
+					</div>
+				</section>
 			</div>
+			<div class="col-md-2"></div>
 		</div>
 	</div>
+</div>

@@ -129,6 +129,28 @@
 						<li><a href="<?php echo base_url('backend/informations/'); ?>"><span class="submenu-label">View All</span></a></li>
 					</ul>
 				</li>
+				<li class="openable open">
+					<a href="#">
+						<span class="menu-icon"><i class="fa fa-map-marker fa-lg"></i></span>
+						<span class="text">Maps Kota</span>
+						<span class="menu-hover"></span>
+					</a>
+					<ul class="submenu">
+						<li><a href="<?php echo base_url('backend/#/'); ?>"><span class="submenu-label">Create New</span></a></li>
+						<li><a href="<?php echo base_url('backend/#/'); ?>"><span class="submenu-label">View All</span></a></li>
+					</ul>
+				</li>
+				<li class="openable open">
+					<a href="#">
+						<span class="menu-icon"><i class="fa fa-map-marker fa-lg"></i></span>
+						<span class="text">Maps Kabupaten</span>
+						<span class="menu-hover"></span>
+					</a>
+					<ul class="submenu">
+						<li><a href="<?php echo base_url('backend/#/'); ?>"><span class="submenu-label">Create New</span></a></li>
+						<li><a href="<?php echo base_url('backend/#/'); ?>"><span class="submenu-label">View All</span></a></li>
+					</ul>
+				</li>
 				
 				<li class="padding-10">OTHERS</li>
 				<li class="openable open">

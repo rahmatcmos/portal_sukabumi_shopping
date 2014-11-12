@@ -12,7 +12,14 @@
 									<option>Mobil</option>
 									<option>Motor</option>
 									<option>Property</option>
-									<option>Elektronik dan Gadget</option>
+									<option>Elektronik</option>
+									<option>Perlengkapan & elektronik rumah tangga</option>
+									<option>Fashion & Accesorris</option>
+									<option>Perlengkapan bayi dan anak</option>
+									<option>Hobi & Olahraga</option>
+									<option>Hewan peliharaan</option>
+									<option>Bisnis ke bisnis</option>
+									<option>Pekerjaan dan jasa</option>
 									<option>Makanan dan Minuman</option>
 								</select>
 							</div>

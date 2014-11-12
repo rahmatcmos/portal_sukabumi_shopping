@@ -13,7 +13,14 @@
 										<option value="car">Mobil</option>
 										<option value="bike">Motor</option>
 										<option value="property">Property</option>
-										<option value="gadget">Elektronik dan Gadget</option>
+										<option value="gadget">Elektronik</option>
+										<option value="pert">Perlengkapan & elektronik rumah tangga</option>
+										<option value="fashion">Fashion & Accesorris</option>
+										<option value="baby_children">Perlengkapan bayi dan anak</option>
+										<option value="sport">Hobi & Olahraga</option>
+										<option value="animal">Hewan peliharaan</option>
+										<option value="business">Bisnis ke bisnis</option>
+										<option value="services">Pekerjaan dan jasa</option>
 										<option value="food">Makanan dan Minuman</option>
 									</select>
 								</div>

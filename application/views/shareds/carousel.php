@@ -3,18 +3,16 @@
 	function get_agency(nilai){
 		$.ajax({
 			type: "POST",
-			url: "<?php echo site_url('home/Get_Agency');?>",
-			data:"key="+nilai,
+			url: "<?php echo site_url('home/get_sub_district');?>",
+			data:"id="+nilai,
 			success: function(data){
-				$("#agency").html(data);
+				$("#sub_district").html(data);
 			},
 
 			error:function(XMLHttpRequest){
 				alert(XMLHttpRequest.responseText);
 			}
-
 		})
-
 	};
 </script>
 
@@ -28,23 +26,30 @@
 							<li data-target="#carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel" data-slide-to="1"></li>
 							<li data-target="#carousel" data-slide-to="2"></li>
+							<li data-target="#carousel" data-slide-to="3"></li>
 						</ol>
 
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="<?php echo base_url('asset/frontend/img/home-banners1.png'); ?>" alt="...">
+								<img src="<?php echo base_url('asset/frontend/img/home-banners1.jpg'); ?>" alt="...">
 								<div class="carousel-caption">
 									<a href="#">Temukan Barang Anda Disini</a>
 								</div>
 							</div>
 							<div class="item">
-								<img src="<?php echo base_url('asset/frontend/img/home-banners3.png'); ?>" alt="...">
+								<img src="<?php echo base_url('asset/frontend/img/home-banners2.jpg'); ?>" alt="...">
 								<div class="carousel-caption">
 									<a href="#">Cepat, Hemat, Terpercaya</a>
 								</div>
 							</div>
 							<div class="item">
-								<img src="<?php echo base_url('asset/frontend/img/bg-01.jpg'); ?>" alt="...">
+								<img src="<?php echo base_url('asset/frontend/img/home-banners3.jpg'); ?>" alt="...">
+								<div class="carousel-caption">
+									<a href="#">Cepat, Hemat, Terpercaya</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="<?php echo base_url('asset/frontend/img/home-banners4.jpg'); ?>" alt="...">
 								<div class="carousel-caption">
 									<a href="#">Situs Jual Barang Baru dan Bekas no. 1</a>
 								</div>
@@ -87,18 +92,25 @@
 											<option>Mobil</option>
 											<option>Motor</option>
 											<option>Property</option>
-											<option>Elektronik dan Gadget</option>
+											<option>Elektronik</option>
+											<option>Perlengkapan & elektronik rumah tangga</option>
+											<option>Fashion & Accesorris</option>
+											<option>Perlengkapan bayi dan anak</option>
+											<option>Hobi & Olahraga</option>
+											<option>Hewan peliharaan</option>
+											<option>Bisnis ke bisnis</option>
+											<option>Pekerjaan dan jasa</option>
 											<option>Makanan dan Minuman</option>
 										</select>
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kota/Kabupaten</label>
-										<select name="city" id="city" class="form-control" onChange="get_agency(this.value);">
+										<select name="location" id="location" class="form-control" onChange="get_agency(this.value);">
 											<option value="">Pilih Daerah ...</option>
 											<?php  
-												foreach ($city as $row) {
+												foreach ($location->result() as  $row) {
 											?>
-											<option value="<?php echo $row->id_search_city; ?>"><?php echo $row->city_name; ?></option>
+											<option value="<?php echo $row->id_location; ?>"><?php echo $row->name; ?></option>
 											<?php
 												}
 											?>
@@ -106,7 +118,7 @@
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kecamatan</label>
-										<select class="form-control" name="agency_name" id="agency">
+										<select class="form-control" name="name" id="sub_district">
 											<option>Pilih Daerah ...</option>
 										</select>
 									</div>
@@ -128,7 +140,14 @@
 											<option>Mobil</option>
 											<option>Motor</option>
 											<option>Property</option>
-											<option>Elektronik dan Gadget</option>
+											<option>Elektronik</option>
+											<option>Perlengkapan & elektronik rumah tangga</option>
+											<option>Fashion & Accesorris</option>
+											<option>Perlengkapan bayi dan anak</option>
+											<option>Hobi & Olahraga</option>
+											<option>Hewan peliharaan</option>
+											<option>Bisnis ke bisnis</option>
+											<option>Pekerjaan dan jasa</option>
 											<option>Makanan dan Minuman</option>
 										</select>
 									</div>
@@ -139,7 +158,7 @@
 											<?php  
 												foreach ($city as $rows) {
 											?>
-											<option value="<?php echo $rows->id_search_city; ?>"><?php echo $rows->city_name; ?></option>
+											<option value="<?php echo $rows->id_location; ?>"><?php echo $rows->name; ?></option>
 											<?php
 												}
 											?>
@@ -147,7 +166,7 @@
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kecamatan</label>
-										<select class="form-control" name="agency_name" id="agency">
+										<select class="form-control" name="name" id="agency">
 											<option>Pilih Daerah ...</option>
 										</select>
 									</div>
@@ -171,10 +190,8 @@
 <section class="property-search-bottom">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				Apa itu Sukabumi shopping?
-				<div class="br10"></div>
-				sukabumishopping.com merupakan situs online classified terbesar di Kota Sukabumi Jawa barat. Sukabumi shopping menyediakan media yang mudah, cepat dan gratis bagi para penjual untuk memasang iklan dan sekaligus bagi pembeli untuk mencari beragam produk barang bekas dan barang baru untuk kebutuhan sehari-hari.
+			<div class="col-md-12 padding-170">
+			<img src="<?php echo base_url(); ?>/asset/frontend/img/ads_top.png" alt="Ads Top" class="img-thumbnail">
 			</div>
 		</div>
 	</div>

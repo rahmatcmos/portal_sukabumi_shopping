@@ -6,13 +6,15 @@ class Home extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('search_agency_model','agency');
-
+		$this->load->model('location_model','location');
+		$this->load->model('sub_district_model','sub_district');
 	}
 
 	public function index()
 	{
-		$data['city']  = $this->agency->Get_search_city();
+		$this->output->enable_profiler(TRUE);
+		$data['location']     = $this->location->get_all();
+		$data['sub_district'] = $this->sub_district->get_all();
 
 		$this->load->view('shareds/head');
 		$this->load->view('shareds/nav_bar');
@@ -24,18 +26,17 @@ class Home extends CI_Controller
 		$this->load->view('shareds/javascript');
 	}
 
-	public function Get_Agency()
+	public function get_sub_district()
 	{
-		$key    = $this->input->post('key');
-		$agency = $this->agency->Get_id_search_city($key);
+		$id           = $this->input->post('id');
+		$sub_district = $this->sub_district->get_by_id($id);
 
-		foreach ($agency as $row){
-			echo '<option value="'.$row['id_search_agency'].'" class="form-control">Kec. '.$row['agency_name'].'</option>';
+		foreach ($sub_district as $row){
+			echo '<option value="'.$row['id_sub_district'].'" class="form-control">'.$row['name'].'</option>';
 		}
 	}
 }
 
 /* End of file home.php */
 /* Location: ./application/controllers/home.php */
-
 ?>
