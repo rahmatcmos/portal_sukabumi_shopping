@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = "home";
-$route['404_override'] = '';
+$route['404_override'] = 'error';
 $route['portal_sukabumi_shopping/(:any)'] = 'portal_sukabumi_shopping/backend/$1';
 
 /* End of file routes.php */

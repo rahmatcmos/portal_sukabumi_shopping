@@ -12,7 +12,7 @@ class Home extends CI_Controller
 
 	public function index()
 	{
-		$this->output->enable_profiler(TRUE);
+		// $this->output->enable_profiler(TRUE);
 		$data['location']     = $this->location->get_all();
 		$data['sub_district'] = $this->sub_district->get_all();
 

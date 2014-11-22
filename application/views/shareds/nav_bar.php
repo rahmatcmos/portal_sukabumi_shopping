@@ -40,7 +40,7 @@
 						</li>
 						<li>
 							<div class="text-center">
-								<a href="<?php echo base_url('signup_ads') ?>"><button type="button" class="btn btn-fresh btn-sm"><span class="fa fa-plus"></span> Pasang Iklan Gratis</button></a>
+								<a href="<?php echo base_url('signup_ads') ?>"><button type="button" class="btn btn-primary btn-sm btn-register"><span class="fa fa-plus"></span> Pasang Iklan Gratis</button></a>
 							</div>
 						</li>
 					</ul>

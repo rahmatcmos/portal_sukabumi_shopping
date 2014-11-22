@@ -12,7 +12,7 @@
 		{
 			$this->load->view('shareds/head');
 			$this->load->view('shareds/nav_bar');
-			$this->load->view('shareds/mini_property');
+			// $this->load->view('shareds/mini_property');
 			$this->load->view('signup_ads');
 			$this->load->view('shareds/footer');
 			$this->load->view('shareds/javascript_wizard');

@@ -7,7 +7,7 @@
 				<ul>
 					<li><a href=""><img src="<?php echo base_url('asset/frontend/img/login-fb.png'); ?>"></a></li>
 					<div class="br5"></div>
-					<li><a href=""><img src="<?php echo base_url('asset/frontend/img/login-gplus.png'); ?>"></a></li>
+					<!-- <li><a href=""><img src="<?php echo base_url('asset/frontend/img/login-gplus.png'); ?>"></a></li> -->
 					
 				</ul>
 			</div>

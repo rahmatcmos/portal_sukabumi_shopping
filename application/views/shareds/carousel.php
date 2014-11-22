@@ -28,7 +28,7 @@
 							<li data-target="#carousel" data-slide-to="2"></li>
 							<li data-target="#carousel" data-slide-to="3"></li>
 						</ol>
-
+					
 						<div class="carousel-inner">
 							<div class="item active">
 								<img src="<?php echo base_url('asset/frontend/img/home-banners1.jpg'); ?>" alt="...">
@@ -56,10 +56,10 @@
 							</div>
 						</div>
 						<a class="left carousel-control" href="#carousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left carousel-40"></span>
+							<span class="fa fa-angle-left carousel-40 padding-size-carousel"></span>
 						</a>
 						<a class="right carousel-control" href="#carousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right carousel-40"></span>
+							<span class="fa fa-angle-right carousel-40 padding-size-carousel"></span>
 						</a>
 					</div>
 				</div>
@@ -153,12 +153,12 @@
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kota/Kabupaten</label>
-										<select name="city" id="city" class="form-control" onChange="get_agency(this.value);">
+										<select name="location" id="location" class="form-control" onChange="get_agency(this.value);">
 											<option value="">Pilih Daerah ...</option>
 											<?php  
-												foreach ($city as $rows) {
+												foreach ($location->result() as  $row) {
 											?>
-											<option value="<?php echo $rows->id_location; ?>"><?php echo $rows->name; ?></option>
+											<option value="<?php echo $row->id_location; ?>"><?php echo $row->name; ?></option>
 											<?php
 												}
 											?>
@@ -166,7 +166,7 @@
 									</div>
 									<div class="form-group col-sm-3 col-lg-3">
 										<label for="">Kecamatan</label>
-										<select class="form-control" name="name" id="agency">
+										<select class="form-control" name="name" id="sub_district">
 											<option>Pilih Daerah ...</option>
 										</select>
 									</div>

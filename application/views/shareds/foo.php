@@ -20,7 +20,7 @@
 	</div>
 </section>
 
-<section class="email-share">
+<!-- <section class="email-share">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -28,9 +28,9 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
-<section class="suported">
+<!-- <section class="suported">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -72,4 +72,4 @@
 			</div>
 		</div>
 	</div>  
-</section>
+</section> -->
